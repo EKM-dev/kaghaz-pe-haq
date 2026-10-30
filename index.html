@@ -1,0 +1,996 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Written Out</title><meta name="description" content="Written Out: a bilingual myth-buster on women's inheritance rights in Pakistan, from British India to today."><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>[hidden]{display:none!important}body{margin:0}img{max-width:100%}</style></head><body>
+<title>Written Out</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Written Out: a bilingual myth-buster on women's inheritance rights in Pakistan, from British India to today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Martian+Mono:wght@400;600&family=Gochi+Hand&family=Noto+Nastaliq+Urdu:wght@400;600&display=swap">
+<style>
+/* Layout: the land register. A colourful, illustrated reference site in five chapters (History, Myths, Rights, Evidence, About) under a fixed top index; ruled-ledger panels, coloured category blocks, a hero where a struck-out name is written back in. */
+:root{
+  --paper:#F7F1E4; --paper-2:#EFE5CF; --sheet:#FFFCF5; --rule:#D9CBAE;
+  --ink:#1C2B4A; --ink-2:#4A5672; --ink-3:#7C8399;
+  --navy:#1C2B4A; --teal:#2F7F78; --coral:#D2553F; --gold:#C38E2C; --purple:#5E57A8;
+  --teal-bg:#DCEBE7; --coral-bg:#F6DDD5; --gold-bg:#F3E5C4; --purple-bg:#E2DFF2;
+  --on-color:#FFFCF5; --shadow:rgba(28,43,74,.14);
+  --font-display:"Young Serif","Iowan Old Style",Georgia,serif;
+  --font-body:"Literata",Georgia,"Times New Roman",serif;
+  --font-mono:"Martian Mono",ui-monospace,Menlo,Consolas,monospace;
+  --font-hand:"Gochi Hand","Segoe Print","Comic Sans MS",cursive;
+  --font-urdu:"Noto Nastaliq Urdu","Jameel Noori Nastaleeq","Urdu Typesetting",serif;
+  --nav-h:62px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#131B2C; --paper-2:#1A2439; --sheet:#1F2A41; --rule:#33415F;
+  --ink:#F1EADB; --ink-2:#C2C7D4; --ink-3:#8E96AB;
+  --navy:#0D1422; --teal:#4FA79E; --coral:#E77560; --gold:#D9A645; --purple:#8C85D6;
+  --teal-bg:#1D3A3A; --coral-bg:#3E2525; --gold-bg:#3A3120; --purple-bg:#2A2848;
+  --on-color:#FFFCF5; --shadow:rgba(0,0,0,.4); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#131B2C; --paper-2:#1A2439; --sheet:#1F2A41; --rule:#33415F;
+  --ink:#F1EADB; --ink-2:#C2C7D4; --ink-3:#8E96AB;
+  --navy:#0D1422; --teal:#4FA79E; --coral:#E77560; --gold:#D9A645; --purple:#8C85D6;
+  --teal-bg:#1D3A3A; --coral-bg:#3E2525; --gold-bg:#3A3120; --purple-bg:#2A2848;
+  --on-color:#FFFCF5; --shadow:rgba(0,0,0,.4); color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 24px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--paper);color:var(--ink);font-family:var(--font-body);font-size:17px;line-height:1.65;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--sheet)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:400;text-wrap:balance;margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.mono{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase}
+
+/* bilingual */
+.ur{font-family:var(--font-urdu);direction:rtl;unicode-bidi:isolate;line-height:2.2;letter-spacing:0;text-transform:none;font-style:normal}
+html[data-lang="en"] .ur{display:none}
+html[data-lang="ur"] .en{display:none}
+html[data-lang="ur"] .ur,html[data-lang="both"] .ur{display:block;text-align:right}
+html[data-lang="both"] .ur{margin-top:.3em;color:var(--ink-2);font-size:.9em}
+html[data-lang="ur"] .il .ur,html[data-lang="both"] .il .ur{display:inline;margin:0 .3em}
+
+/* top index */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--sheet);border-bottom:2px solid var(--ink)}
+.top .wrap{height:var(--nav-h);display:flex;align-items:center;gap:20px}
+.brand{font-family:var(--font-display);font-size:1.35rem;text-decoration:none;white-space:nowrap;display:flex;align-items:baseline;gap:8px}
+.brand small{font-family:var(--font-urdu);font-size:.8rem;color:var(--coral)}
+.links{display:flex;gap:4px;margin-left:auto}
+.links a{font-family:var(--font-mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;padding:8px 10px;border-radius:999px;color:var(--ink-2);white-space:nowrap}
+.links a.on{background:var(--ink);color:var(--sheet)}
+.lang{display:flex;border:1.5px solid var(--ink);border-radius:999px;overflow:hidden;flex:none}
+.lang button{background:none;border:0;color:var(--ink);font-family:var(--font-mono);font-size:.66rem;padding:7px 10px;cursor:pointer}
+.lang button.u{font-family:var(--font-urdu);font-size:.8rem;padding:0 10px}
+.lang button[aria-pressed="true"]{background:var(--gold);color:var(--navy)}
+
+/* hero */
+.hero{padding-block:56px 40px}
+.hero .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
+.kick{color:var(--gold);font-weight:600}
+.hero h1{font-size:clamp(3.4rem,8vw,6rem);line-height:.95;margin:14px 0 10px;letter-spacing:-.01em}
+.hero h1 .ur{font-size:.45em;color:var(--coral);line-height:2}
+.hero .sub{font-family:var(--font-body);font-style:italic;font-size:1.45rem;color:var(--ink-2);margin:0 0 18px}
+.hero .lede{max-width:34em;margin:0 0 26px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;flex-direction:column;gap:2px;text-decoration:none;padding:13px 20px;border:2px solid var(--ink);border-radius:6px;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;box-shadow:4px 4px 0 var(--ink);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.btn.primary{background:var(--gold);color:var(--navy)}
+.btn.ghost{background:var(--sheet)}
+.btn .ur{font-size:.9rem;text-transform:none}
+
+/* register illustration */
+.register-wrap{position:relative;padding:28px}
+.blob{position:absolute;border-radius:50%;z-index:0}
+.blob.a{width:62%;aspect-ratio:1;max-width:100%;background:var(--teal-bg);right:0;top:0}
+.blob.b{width:44%;aspect-ratio:1;max-width:100%;background:var(--coral-bg);left:0;bottom:0}
+.register{position:relative;z-index:1;background:var(--sheet);border:2px solid var(--ink);border-radius:8px;box-shadow:8px 8px 0 var(--shadow);overflow:hidden}
+.reg-head{background:var(--navy);color:var(--on-color);padding:12px 18px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.reg-head b{font-family:var(--font-mono);font-size:.68rem;letter-spacing:.14em;font-weight:600}
+.reg-head span{font-family:var(--font-mono);font-size:.62rem;opacity:.75}
+.register table{width:100%;border-collapse:collapse;font-size:.92rem}
+.register th{font-family:var(--font-mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;text-align:left;color:var(--ink-3);font-weight:400;padding:10px 18px 6px;border-bottom:1.5px solid var(--rule)}
+.register td{padding:11px 18px;border-bottom:1px solid var(--rule);font-family:var(--font-hand);font-size:1.3rem;color:var(--ink)}
+.register td.n{font-family:var(--font-mono);font-size:.78rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.strike{position:relative;display:inline-block}
+.strike::after{content:"";position:absolute;left:-6px;right:-6px;top:52%;height:3px;background:var(--coral);transform:rotate(-3deg);transform-origin:left;transition:transform .6s ease}
+.written .strike::after{transform:rotate(-3deg) scaleX(0);transform-origin:right}
+.rewrite{color:var(--teal);font-weight:600;display:inline-block;clip-path:inset(0 100% 0 0);transition:clip-path 1.2s ease .5s}
+.written .rewrite{clip-path:inset(0 0 0 0)}
+.reg-foot{display:flex;align-items:center;gap:12px;padding:14px 18px;flex-wrap:wrap}
+.seal{width:62px;height:62px;border-radius:50%;border:3px solid var(--coral);color:var(--coral);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;letter-spacing:.1em;transform:rotate(-12deg);flex:none;text-align:center;line-height:1.3}
+.reg-foot p{margin:0;font-size:.85rem;color:var(--ink-2);flex:1;min-width:0}
+.replay{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;background:none;border:1.5px solid var(--ink);border-radius:999px;padding:6px 12px;cursor:pointer;color:var(--ink)}
+
+/* three lenses strip */
+.lenses{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:2px solid var(--ink);border-radius:8px;overflow:hidden;margin-top:44px;background:var(--sheet)}
+.lenses div{padding:18px 20px;border-right:2px solid var(--ink)}
+.lenses div:last-child{border-right:0}
+.lenses .mono{display:block;margin-bottom:6px;font-weight:600}
+.lenses div:nth-child(1){background:var(--teal-bg)} .lenses div:nth-child(1) .mono{color:var(--teal)}
+.lenses div:nth-child(2){background:var(--coral-bg)} .lenses div:nth-child(2) .mono{color:var(--coral)}
+.lenses div:nth-child(3){background:var(--purple-bg)} .lenses div:nth-child(3) .mono{color:var(--purple)}
+
+/* chapters */
+.chapter{padding-block:80px;border-top:2px solid var(--ink)}
+.chapter.alt{background:var(--paper-2)}
+.ch-head{display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px;align-items:start;margin-bottom:36px}
+.ch-num{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font-family:var(--font-display);font-size:1.7rem;color:var(--on-color);border:2px solid var(--ink)}
+.ch-head h2{font-size:clamp(2rem,4.4vw,3.1rem);line-height:1.05}
+.ch-head h2 .ur{font-size:.55em;line-height:2;color:var(--ink-2)}
+.ch-head p{margin:10px 0 0;max-width:46em;color:var(--ink-2)}
+
+/* timeline */
+.tl-scroll{overflow-x:auto;padding:6px 2px 10px}
+.tl{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(128px,1fr);min-width:max-content;position:relative}
+.tl::before{content:"";position:absolute;left:30px;right:30px;top:27px;height:5px;background:var(--gold);border-radius:3px}
+.tl button{position:relative;background:none;border:0;font:inherit;color:var(--ink);cursor:pointer;display:grid;justify-items:center;gap:10px;padding:0 6px}
+.tl .dot{width:42px;height:42px;border-radius:50%;border:4px solid var(--sheet);box-shadow:0 0 0 2px var(--ink);transition:transform .2s}
+.tl .card{border:2px solid currentColor;border-radius:8px;background:var(--sheet);padding:8px 10px;text-align:left;width:100%}
+.tl .card b{font-family:var(--font-display);font-weight:400;font-size:1.25rem;display:block}
+.tl .card span{font-family:var(--font-mono);font-size:.6rem;letter-spacing:.06em;color:var(--ink);display:block;line-height:1.5}
+.tl button[aria-pressed="true"] .dot{transform:scale(1.2)}
+.tl button[aria-pressed="true"] .card{box-shadow:4px 4px 0 currentColor}
+.tl-detail{margin-top:22px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);border:2px solid var(--ink);border-radius:8px;background:var(--sheet);overflow:hidden}
+.tl-detail .body{padding:22px}
+.tl-detail .meta{color:var(--ink-3)}
+.tl-detail h3{font-size:1.55rem;margin:6px 0 10px}
+.tl-detail .lcx{display:grid;border-left:2px solid var(--ink)}
+.tl-detail .lcx div{padding:12px 16px;border-bottom:1px solid var(--rule);font-size:.92rem}
+.tl-detail .lcx div:last-child{border-bottom:0}
+.tl-detail .lcx .mono{display:block;font-weight:600}
+
+/* turning points grid */
+.points{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:44px}
+.pt{background:var(--sheet);border:2px solid var(--ink);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.pt-head{padding:14px 20px;color:var(--on-color);display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.pt-head h3{font-size:1.4rem}
+.pt-head .mono{opacity:.9}
+.pt-body{padding:20px;flex:1}
+.pt-body > p:first-child{margin-top:0}
+.src{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.04em;color:var(--ink-3);margin-top:14px;line-height:1.7}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.chip{font:inherit;font-size:.9rem;background:var(--sheet);color:var(--ink);border:1.5px solid var(--ink);border-radius:999px;padding:8px 16px;cursor:pointer;line-height:1.35;text-align:left}
+.chip:hover{background:var(--paper-2)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--sheet)}
+.chip.right{background:var(--teal);border-color:var(--teal);color:var(--on-color)}
+.chip.wrong{background:var(--coral);border-color:var(--coral);color:var(--on-color)}
+.chip:disabled{cursor:default}
+.answer{margin-top:12px;padding:14px 16px;border-radius:6px;background:var(--teal-bg);font-size:.95rem}
+.answer.warn{background:var(--coral-bg)}
+.quote{font-family:var(--font-mono);font-size:.74rem;border-left:4px solid var(--teal);padding:6px 12px;margin-top:10px}
+
+.estate{display:grid;grid-template-columns:minmax(0,150px) minmax(0,1fr);gap:18px;align-items:start;margin-top:12px}
+.plots{display:grid;grid-template-columns:repeat(6,1fr);gap:3px}
+.plots i{aspect-ratio:1;max-width:100%;border-radius:2px;background:var(--paper-2);border:1px solid var(--rule);transition:background .4s}
+.heir{display:grid;grid-template-columns:14px minmax(0,1fr);gap:10px;align-items:start;font-size:.92rem;margin-bottom:8px}
+.heir .sw{width:14px;height:14px;border-radius:3px;margin-top:5px}
+.heir b{font-family:var(--font-mono);font-size:.72rem;font-weight:600;display:block;font-variant-numeric:tabular-nums}
+.fine{font-size:.8rem;color:var(--ink-3);margin:10px 0 0;line-height:1.55}
+
+.items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.item{border:1.5px solid var(--rule);border-radius:6px;padding:10px 12px}
+.item h4{font-family:var(--font-body);font-weight:600;font-size:.95rem;margin-bottom:6px}
+.item .chips{margin:0;gap:6px}
+.item .chip{font-size:.78rem;padding:5px 11px}
+.item .res{font-size:.8rem;margin-top:6px;min-height:1.3em;color:var(--ink-2)}
+.clause{font-family:var(--font-mono);font-size:.76rem;padding:12px;background:var(--navy);color:var(--on-color);border-radius:6px;margin-top:12px;line-height:1.7}
+.clause mark{background:var(--coral);color:var(--on-color);padding:1px 4px}
+
+.yr{font-family:var(--font-display);font-size:3rem;line-height:1;font-variant-numeric:tabular-nums}
+input[type=range]{width:100%;accent-color:var(--purple);margin:12px 0 2px}
+.scale{display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:.58rem;color:var(--ink-3)}
+.era{margin-top:14px;border-radius:6px;padding:14px 16px;border-left:6px solid var(--purple);background:var(--paper)}
+.era .tag{display:inline-block;font-family:var(--font-mono);font-size:.6rem;letter-spacing:.1em;padding:3px 9px;border-radius:999px;color:var(--on-color);margin-bottom:8px}
+
+.note{font-size:.85rem;color:var(--ink-3);margin-top:30px;padding-top:14px;border-top:1px dashed var(--rule)}
+.note b{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.1em;color:var(--ink-2)}
+
+/* myths */
+.myth{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr) minmax(0,1.25fr);border:2px solid var(--ink);border-radius:8px;background:var(--sheet);overflow:hidden;margin-bottom:16px}
+.myth > div{padding:20px;min-width:0}
+.myth .claim{background:var(--coral-bg);border-right:2px solid var(--ink)}
+.myth .claim .mono{color:var(--coral);font-weight:600}
+.myth blockquote{margin:8px 0 0;font-family:var(--font-display);font-size:1.45rem;line-height:1.2}
+.myth blockquote .ur{font-size:.75em}
+.myth .q{border-right:1px dashed var(--rule)}
+.myth .q .mono,.myth .r .mono{color:var(--teal);font-weight:600;display:block;margin-bottom:6px}
+.pill{display:inline-block;font-family:var(--font-mono);font-size:.62rem;letter-spacing:.12em;padding:4px 10px;border-radius:999px;color:var(--on-color);margin-bottom:8px}
+.myth[data-open="false"] .after{display:none}
+.myth[data-open="true"] .before{display:none}
+
+/* rights */
+.rights{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px}
+.steps{display:grid;gap:12px;align-content:start}
+.stepbox{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:start;background:var(--sheet);border:2px solid var(--ink);border-radius:8px;padding:16px;cursor:pointer}
+.stepbox input{width:22px;height:22px;accent-color:var(--teal);margin-top:3px}
+.stepbox .mono{color:var(--teal);font-weight:600;display:block;margin-bottom:4px}
+.boxes{display:grid;gap:12px;align-content:start}
+.box{border-radius:8px;padding:16px 18px;border:2px solid var(--ink)}
+.box .mono{display:block;font-weight:600;margin-bottom:4px}
+.box.g{background:var(--gold-bg)} .box.g .mono{color:var(--gold)}
+.box.c{background:var(--coral-bg)} .box.c .mono{color:var(--coral)}
+.box.p{background:var(--purple-bg)} .box.p .mono{color:var(--purple)}
+.scen-wrap{margin-top:50px}
+.scen-wrap > h3{font-size:1.7rem;margin-bottom:6px}
+.scens{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:18px}
+.scen{background:var(--sheet);border:2px solid var(--ink);border-radius:8px;padding:18px;display:flex;flex-direction:column}
+.scen .mono{color:var(--purple);font-weight:600}
+.scen p{margin:6px 0 4px;flex:1}
+.explainer{margin-top:50px;border:2px solid var(--ink);border-radius:8px;overflow:hidden;background:var(--sheet)}
+.ex-top{background:var(--navy);color:var(--on-color);padding:18px 22px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center}
+.ex-top h3{font-size:1.5rem}
+.ex-row{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);border-top:1px solid var(--rule)}
+.ex-row > div{padding:14px 22px}
+.ex-row > div:first-child{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.1em;font-weight:600;display:flex;align-items:center;gap:10px}
+.ex-row .dot{width:12px;height:12px;border-radius:50%;flex:none}
+.copybtn{font-family:var(--font-mono);font-size:.66rem;letter-spacing:.08em;background:var(--gold);color:var(--navy);border:0;border-radius:999px;padding:9px 16px;cursor:pointer}
+
+/* evidence */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{background:var(--sheet);border:2px solid var(--ink);border-radius:8px;display:flex;flex-direction:column;min-width:0;overflow:hidden}
+.card .type{font-family:var(--font-mono);font-size:.58rem;letter-spacing:.12em;padding:8px 14px;color:var(--on-color);font-weight:600}
+.card .in{padding:14px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h4{font-family:var(--font-body);font-weight:600;font-size:1rem;line-height:1.35}
+.card .meta{font-family:var(--font-mono);font-size:.6rem;color:var(--ink-3);line-height:1.6}
+.card .row{font-size:.86rem}
+.card .row b{font-family:var(--font-mono);font-size:.56rem;letter-spacing:.12em;font-weight:600;display:block;color:var(--ink-3)}
+.card a{font-family:var(--font-mono);font-size:.64rem;margin-top:auto;word-break:break-word;color:var(--ink)}
+.t-leg{background:var(--teal)} .t-jud{background:var(--coral)} .t-arc{background:var(--gold)} .t-rep{background:var(--purple)} .t-res{background:var(--ink-2)}
+.rulebox{margin-top:28px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:20px;align-items:center;background:var(--gold-bg);border:2px solid var(--ink);border-radius:8px;padding:22px}
+.rulebox .big{font-family:var(--font-display);font-size:1.5rem;line-height:1.25}
+.rulebox .mono{color:var(--gold);font-weight:600;display:block;margin-bottom:6px}
+.rulebox svg{width:70px;height:70px}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px}
+.panel{background:var(--sheet);border:2px solid var(--ink);border-radius:8px;padding:20px}
+.panel .mono{display:block;color:var(--gold);font-weight:600;margin-bottom:8px}
+.swatches{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-radius:6px;overflow:hidden;border:2px solid var(--ink)}
+.swatches span{height:56px;display:flex;align-items:flex-end;padding:5px 6px;font-family:var(--font-mono);font-size:.5rem;letter-spacing:.08em;color:#FFFCF5}
+footer{border-top:2px solid var(--ink);padding-block:28px 48px;font-size:.82rem;color:var(--ink-3);background:var(--sheet)}
+
+/* research paper */
+.paper-card{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);border:2px solid var(--ink);border-radius:8px;overflow:hidden;background:var(--sheet)}
+.paper-cover{background:var(--navy);color:var(--on-color);padding:30px;display:flex;flex-direction:column;gap:12px;position:relative;background-image:repeating-linear-gradient(0deg,transparent 0 27px,rgba(255,252,245,.07) 27px 28px)}
+.paper-cover .mono{color:var(--gold)}
+.paper-cover h3{font-size:clamp(1.9rem,3.6vw,2.6rem);line-height:1.08}
+.ptitle-sub{margin:0;font-style:italic;opacity:.85}
+.kw{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.kw span{font-family:var(--font-mono);font-size:.58rem;letter-spacing:.06em;border:1px solid rgba(255,252,245,.4);border-radius:999px;padding:4px 9px}
+.paper-side{padding:26px 28px}
+.paper-side > .mono{color:var(--teal);font-weight:600}
+.stages{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:14px 0 20px}
+.stages div{border-left:5px solid var(--c);background:var(--paper);border-radius:4px;padding:8px 10px;font-size:.84rem;display:flex;flex-direction:column;gap:2px}
+.stages b{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.08em}
+.stages em{font-family:var(--font-mono);font-style:normal;font-size:.6rem;color:var(--c)}
+.readbtn{cursor:pointer;font:inherit;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
+.reader{display:grid;grid-template-columns:220px minmax(0,1fr);gap:28px;margin-top:28px;align-items:start}
+.toc{position:sticky;top:calc(var(--nav-h) + 20px);background:var(--sheet);border:2px solid var(--ink);border-radius:8px;padding:16px;max-height:calc(100vh - var(--nav-h) - 40px);overflow:auto}
+.toc .mono{color:var(--gold);font-weight:600}
+.toc ol{list-style:none;padding:0;margin:10px 0 14px;display:grid;gap:4px}
+.toc a{font-size:.82rem;text-decoration:none;color:var(--ink-2);line-height:1.35;display:block}
+.toc a.sub{padding-left:12px;font-size:.76rem}
+.toc a:hover{color:var(--coral)}
+.paper{overflow-wrap:break-word;background:var(--sheet);border:2px solid var(--ink);border-radius:8px;padding:clamp(20px,4vw,48px);font-size:1rem;line-height:1.75;min-width:0}
+.paper > *{max-width:68ch}
+.paper .paper-title{font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15;margin-bottom:20px}
+.paper h2{font-size:1.5rem;margin:2.2em 0 .5em;padding-top:.6em;border-top:2px solid var(--rule)}
+.paper h3{font-family:var(--font-body);font-weight:600;font-size:1.08rem;margin:1.6em 0 .4em;color:var(--teal)}
+.paper p{margin:0 0 1em}
+.paper a{color:var(--coral);word-break:break-word}
+.paper sup a,.paper a.footnote-ref{text-decoration:none;font-family:var(--font-mono);font-size:.7em}
+.paper table{border-collapse:collapse;width:100%;font-size:.85rem;margin:1em 0 1.6em;display:block;overflow-x:auto;max-width:100%}
+.paper th,.paper td{border:1px solid var(--rule);padding:8px 10px;text-align:left;vertical-align:top}
+.paper thead th,.paper tr.header th{background:var(--paper-2);font-family:var(--font-mono);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase}
+.paper .footnotes{font-size:.82rem;color:var(--ink-2);margin-top:2.4em;border-top:2px solid var(--ink);padding-top:1em}
+.paper .footnotes hr{display:none}
+.paper .footnotes ol{padding-left:1.4em}
+.paper .footnotes li{margin-bottom:.5em;overflow-wrap:anywhere}
+html[data-lang="ur"] .paper{direction:ltr}
+/* contact */
+.contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border:2px solid var(--ink);border-radius:8px;overflow:hidden;background:var(--sheet);box-shadow:8px 8px 0 var(--shadow)}
+.contact > div{padding:28px}
+.contact-name{background:var(--teal-bg);border-right:2px solid var(--ink)}
+.contact-name .mono,.contact-num .mono{color:var(--teal);font-weight:600}
+.contact-name h3{font-size:clamp(1.6rem,3.2vw,2.3rem);line-height:1.1;margin-top:8px}
+.num{font-family:var(--font-mono);font-size:clamp(1.2rem,2.6vw,1.6rem);font-weight:600;margin:8px 0 4px;user-select:all;font-variant-numeric:tabular-nums}
+a.chip{text-decoration:none;display:inline-block}
+
+@media (max-width:900px){
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .scens{grid-template-columns:minmax(0,1fr)}
+  .myth{grid-template-columns:minmax(0,1fr)}
+  .myth .claim,.myth .q{border-right:0;border-bottom:1px dashed var(--rule)}
+  .myth .claim{border-bottom:2px solid var(--ink)}
+}
+@media (max-width:760px){
+  .top .wrap{flex-wrap:wrap;height:auto;padding-block:10px;gap:8px 12px}
+  .links{order:3;width:100%;min-width:0;max-width:100%;margin-left:0;overflow-x:auto;scrollbar-width:none}
+  .lang{margin-left:auto}
+  :root{--nav-h:104px}
+  .hero{padding-block:30px 24px}
+  .hero .grid,.points,.rights,.about,.tl-detail,.ex-row,.lenses,.rulebox{grid-template-columns:minmax(0,1fr)}
+  .register-wrap{padding:14px}
+  .lenses div{border-right:0;border-bottom:2px solid var(--ink)}
+  .lenses div:last-child{border-bottom:0}
+  .tl-detail .lcx{border-left:0;border-top:2px solid var(--ink)}
+  .cards{grid-template-columns:minmax(0,1fr)}
+  .chapter{padding-block:56px}
+  .ch-num{width:50px;height:50px;font-size:1.3rem}
+  .ch-head{gap:14px}
+  .estate{grid-template-columns:minmax(0,120px) minmax(0,1fr)}
+  .items{grid-template-columns:minmax(0,1fr)}
+  .register td{padding:9px 12px;font-size:1.15rem}
+  .register th{padding:8px 12px 6px}
+  .paper-card,.contact,.reader,.stages{grid-template-columns:minmax(0,1fr)}
+  .contact-name{border-right:0;border-bottom:2px solid var(--ink)}
+  .toc{position:static;max-height:none}
+}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#home">Written Out <small lang="ur">تحریر سے خارج</small></a>
+    <nav class="links" id="links" aria-label="Sections">
+      <a href="#home">Home</a><a href="#history">History</a><a href="#myths">Myths</a><a href="#rights">Rights</a><a href="#evidence">Evidence</a><a href="#research">Research</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button data-lang="en" aria-pressed="true">EN</button>
+      <button data-lang="ur" class="u" aria-pressed="false" lang="ur">اردو</button>
+      <button data-lang="both" aria-pressed="false">BOTH</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- HOME -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <span class="mono kick"><span class="en">A bilingual digital myth-buster</span><span class="ur">ایک دو لسانی ڈیجیٹل حقیقت نامہ</span></span>
+        <h1><span class="en">Written Out</span><span class="ur">تحریر سے خارج</span></h1>
+        <p class="sub"><span class="en">Women’s Inheritance Rights in Pakistan</span><span class="ur">پاکستان میں خواتین کے وراثتی حقوق</span></p>
+        <p class="lede"><span class="en">How law and custom changed from British India to contemporary Pakistan, and the original evidence behind each claim. Was a daughter left out by the law, or by custom?</span><span class="ur">برطانوی ہند سے آج کے پاکستان تک قانون اور رواج کیسے بدلے، اور ہر دعوے کے پیچھے اصل ثبوت کیا ہے۔ کیا بیٹی کو قانون نے خارج کیا، یا رواج نے؟</span></p>
+        <div class="cta">
+          <a class="btn primary" href="#history"><span class="en">Explore history →</span><span class="ur">تاریخ دیکھیں</span></a>
+          <a class="btn ghost" href="#rights"><span class="en">Know your rights →</span><span class="ur">اپنے حقوق جانیں</span></a>
+          <a class="btn ghost" href="#research"><span class="en">Read the research paper →</span><span class="ur">تحقیقی مقالہ پڑھیں</span></a>
+        </div>
+      </div>
+      <div class="register-wrap">
+        <span class="blob a" aria-hidden="true"></span><span class="blob b" aria-hidden="true"></span>
+        <div class="register" id="register">
+          <div class="reg-head"><b>REGISTER OF INHERITANCE</b><span>Illustration · not a real record</span></div>
+          <table>
+            <thead><tr><th>Heir</th><th>Relation</th><th>Share</th></tr></thead>
+            <tbody>
+              <tr><td>Widow</td><td class="n">wife</td><td class="n">1/8</td></tr>
+              <tr><td>Son</td><td class="n">son</td><td class="n">14/24</td></tr>
+              <tr><td><span class="strike">Daughter</span></td><td class="n">daughter</td><td class="n"><span class="strike">—</span> <span class="rewrite">7/24</span></td></tr>
+            </tbody>
+          </table>
+          <div class="reg-foot">
+            <span class="seal">LAW<br>1962</span>
+            <p><span class="en">Custom struck her out. The law wrote her back in. This site follows how.</span><span class="ur">رواج نے اس کا نام کاٹا، قانون نے دوبارہ لکھا۔ یہ ویب سائٹ بتاتی ہے کیسے۔</span></p>
+            <button class="replay" id="replay">Replay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lenses">
+      <div><span class="mono il">Law / <span class="ur">قانون</span></span><span class="en">What did the statute or court say?</span><span class="ur">قانون یا عدالت نے کیا کہا؟</span></div>
+      <div><span class="mono il">Custom / <span class="ur">رواج</span></span><span class="en">What did historical records describe?</span><span class="ur">تاریخی ریکارڈ نے کیا بیان کیا؟</span></div>
+      <div><span class="mono il">Experience / <span class="ur">تجربہ</span></span><span class="en">What evidence exists about women’s ability to claim property?</span><span class="ur">خواتین کے جائیداد حاصل کر پانے کے بارے میں کیا شواہد ہیں؟</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- HISTORY -->
+<section class="chapter alt" id="history">
+  <div class="wrap">
+    <div class="ch-head">
+      <span class="ch-num" style="background:var(--teal)">1</span>
+      <div>
+        <h2><span class="en">The History: Law, Custom &amp; Change</span><span class="ur">تاریخ: قانون، رواج اور تبدیلی</span></h2>
+        <p><span class="en">Each date opens its record: what changed, what it proved, and what it left out. Pick a date.</span><span class="ur">ہر تاریخ اپنا ریکارڈ کھولتی ہے: کیا بدلا، کیا ثابت ہوا، اور کیا رہ گیا۔ ایک تاریخ چنیں۔</span></p>
+      </div>
+    </div>
+    <div class="tl-scroll"><div class="tl" id="tl"></div></div>
+    <div class="tl-detail" id="tl-detail" aria-live="polite"></div>
+
+    <div class="points">
+      <article class="pt">
+        <div class="pt-head" style="background:var(--teal)"><h3><span class="en">Custom comes first</span><span class="ur">پہلے رواج</span></h3><span class="mono">1872</span></div>
+        <div class="pt-body">
+          <p><span class="en">Colonial Punjab. A Muslim landowner dies, leaving a son and a daughter. Which rule did the court apply first?</span><span class="ur">نوآبادیاتی پنجاب۔ ایک مسلمان زمیندار بیٹا اور بیٹی چھوڑ کر فوت ہوتا ہے۔ عدالت نے پہلے کون سا اصول لاگو کیا؟</span></p>
+          <div class="chips" id="q2">
+            <button class="chip" data-a="0"><span class="en">Islamic law</span><span class="ur">اسلامی قانون</span></button>
+            <button class="chip" data-a="1"><span class="en">The community’s custom</span><span class="ur">برادری کا رواج</span></button>
+            <button class="chip" data-a="2"><span class="en">English law</span><span class="ur">انگریزی قانون</span></button>
+          </div>
+          <div class="answer" id="q2-out" hidden>
+            <span class="en"><b>Custom.</b> Section 5 made custom the rule of decision in succession and the “special property of females”, where a custom applied and was not against justice, equity or good conscience. Muslim law applied only in other cases.</span><span class="ur"><b>رواج۔</b> دفعہ ۵ کے تحت وراثت اور خواتین کی خصوصی جائیداد میں رواج فیصلے کا اصول تھا، بشرطیکہ وہ لاگو ہو اور انصاف و نیک نیتی کے خلاف نہ ہو۔ اسلامی قانون صرف باقی صورتوں میں لاگو ہوتا تھا۔</span>
+            <div class="quote">“the rule of decision shall be custom”</div>
+          </div>
+          <p class="src">Punjab Laws Act 1872 (IV of 1872), s.5</p>
+        </div>
+      </article>
+      <article class="pt">
+        <div class="pt-head" style="background:var(--gold)"><h3><span class="en">Two rulebooks, one family</span><span class="ur">دو ضابطے، ایک خاندان</span></h3><span class="mono">1880s</span></div>
+        <div class="pt-body">
+          <p><span class="en">A father dies, leaving a widow, a son and a daughter. Switch the rulebook and watch the land move.</span><span class="ur">باپ بیوہ، بیٹا اور بیٹی چھوڑ کر فوت ہوتا ہے۔ ضابطہ بدلیں اور زمین کی تقسیم دیکھیں۔</span></p>
+          <div class="chips" role="group" aria-label="Rulebook">
+            <button class="chip" id="rb-custom" aria-pressed="true">Recorded custom</button>
+            <button class="chip" id="rb-shariat" aria-pressed="false">Shariat</button>
+          </div>
+          <div class="estate"><div class="plots" id="plots" aria-label="The land as 24 equal plots"></div><div id="heirs" aria-live="polite"></div></div>
+          <p class="fine" id="rb-note"></p>
+          <p class="src">Riwaj-i-am (records of custom); Rattigan, Digest of Customary Law (1880); Qur’an 4:11–12</p>
+        </div>
+      </article>
+      <article class="pt">
+        <div class="pt-head" style="background:var(--coral)"><h3><span class="en">The exception clause</span><span class="ur">استثنائی شق</span></h3><span class="mono">1937</span></div>
+        <div class="pt-body">
+          <p><span class="en">The 1937 Act ordered that Muslims be governed by Shariat in inheritance. Sort the estate: which rule covered each item?</span><span class="ur">۱۹۳۷ کے قانون نے وراثت میں مسلمانوں پر شریعت لاگو کی۔ ترکہ تقسیم کریں: ہر چیز پر کون سا اصول لاگو تھا؟</span></p>
+          <div class="items" id="items"></div>
+          <div class="clause" id="clause" hidden>“Notwithstanding any custom or usage to the contrary, in all questions <mark>(save questions relating to agricultural land)</mark> …”</div>
+          <p class="src">Muslim Personal Law (Shariat) Application Act 1937, s.2</p>
+        </div>
+      </article>
+      <article class="pt">
+        <div class="pt-head" style="background:var(--purple)"><h3><span class="en">The land question</span><span class="ur">زمین کا سوال</span></h3><span class="mono">1948–1983</span></div>
+        <div class="pt-body">
+          <label for="year" style="font-size:.9rem;color:var(--ink-2)">A daughter’s claim to agricultural land in Punjab, in</label>
+          <div class="yr" id="yr-out">1900</div>
+          <input type="range" id="year" min="1872" max="2026" value="1900">
+          <div class="scale"><span>1872</span><span>1948</span><span>1962</span><span>1983</span><span>2026</span></div>
+          <div class="era" id="era" aria-live="polite"></div>
+          <p class="src">Punjab Shariat Act 1948; West Pakistan Shariat Act 1962, ss.2, 3, 5; s.2-A (1983); FSC, Sakina Bibi v. Govt of Punjab</p>
+        </div>
+      </article>
+    </div>
+    <p class="note"><b>RESEARCH NOTE</b> · <span class="en">Statutes are cited from their published text. Custom varied by tribe and district, so the custom example is a typical pattern, not a rule for every family.</span><span class="ur">قوانین ان کے شائع شدہ متن سے لیے گئے ہیں۔ رواج قبیلے اور ضلع کے لحاظ سے مختلف تھا، اس لیے رواج کی مثال ایک عام طریقہ ہے، ہر خاندان کا اصول نہیں۔</span></p>
+  </div>
+</section>
+
+<!-- MYTHS -->
+<section class="chapter" id="myths">
+  <div class="wrap">
+    <div class="ch-head">
+      <span class="ch-num" style="background:var(--coral)">2</span>
+      <div>
+        <h2><span class="en">Myth-Busters: Claim, Fact, Proof</span><span class="ur">غلط فہمیاں: دعویٰ، حقیقت، ثبوت</span></h2>
+        <p><span class="en">The point is not to tell people they are wrong. Each claim is tested against the historical record and current law.</span><span class="ur">مقصد لوگوں کو غلط کہنا نہیں۔ ہر دعوے کو تاریخی ریکارڈ اور موجودہ قانون کے سامنے پرکھا جاتا ہے۔</span></p>
+      </div>
+    </div>
+    <div id="myths-list"></div>
+  </div>
+</section>
+
+<!-- RIGHTS -->
+<section class="chapter alt" id="rights">
+  <div class="wrap">
+    <div class="ch-head">
+      <span class="ch-num" style="background:var(--gold)">3</span>
+      <div>
+        <h2><span class="en">Know Your Rights: A Practical Starting Point</span><span class="ur">اپنے حقوق جانیں: ایک عملی آغاز</span></h2>
+        <p><span class="en">General information, not individual legal advice, and not a calculator of inheritance shares.</span><span class="ur">عمومی معلومات، انفرادی قانونی مشورہ نہیں، اور نہ ہی وراثتی حصے نکالنے کا آلہ۔</span></p>
+      </div>
+    </div>
+    <div class="rights">
+      <div class="steps">
+        <label class="stepbox" for="s1"><input type="checkbox" id="s1"><span><span class="mono">01 · Write down the situation</span><span class="en">Who has died? Who may be an heir? What property is involved, and where is it?</span><span class="ur">کون فوت ہوا؟ وارث کون ہو سکتے ہیں؟ کون سی جائیداد ہے اور کہاں ہے؟</span></span></label>
+        <label class="stepbox" for="s2"><input type="checkbox" id="s2"><span><span class="mono">02 · Ask which documents are needed</span><span class="en">A qualified adviser can explain which family, identity, death, property or succession records may be relevant.</span><span class="ur">ایک مستند مشیر بتا سکتا ہے کہ خاندانی، شناختی، وفات، جائیداد یا وراثتی دستاویزات میں سے کون سی ضروری ہیں۔</span></span></label>
+        <label class="stepbox" for="s3"><input type="checkbox" id="s3"><span><span class="mono">03 · Ask about the process</span><span class="en">Which authority or court is responsible? What procedures apply? What remedies may be available?</span><span class="ur">کون سا ادارہ یا عدالت ذمہ دار ہے؟ کون سا طریقہ کار لاگو ہے؟ کیا داد رسی ممکن ہے؟</span></span></label>
+      </div>
+      <div class="boxes">
+        <div class="box g"><span class="mono">Important to know</span><span class="en">Inheritance depends on family relationships, the applicable law, the type and location of property, and the relevant documents.</span><span class="ur">وراثت کا انحصار خاندانی رشتوں، لاگو قانون، جائیداد کی قسم اور مقام، اور متعلقہ دستاویزات پر ہے۔</span></div>
+        <div class="box c"><span class="mono">Pressure is not the same as choice</span><span class="en">If you are pressured to sign away property, seek qualified advice before signing.</span><span class="ur">اگر آپ پر جائیداد سے دستبردار ہونے کے لیے دباؤ ہو تو دستخط سے پہلے مستند مشورہ لیں۔</span></div>
+        <div class="box p"><span class="mono">Where complaints can go</span><span class="en">In Punjab, the Enforcement of Women’s Property Rights Act 2021 lets a woman complain to the Ombudsperson, who can ask the police to help carry out orders. Islamabad (2020) and Khyber Pakhtunkhwa (2019) have similar Acts. Check the current procedure before filing.</span><span class="ur">پنجاب میں ۲۰۲۱ کے قانون کے تحت خاتون محتسب کو شکایت کر سکتی ہے، جو احکامات پر عمل کے لیے پولیس کی مدد لے سکتا ہے۔ اسلام آباد (۲۰۲۰) اور خیبر پختونخوا (۲۰۱۹) میں بھی ایسے قوانین ہیں۔ شکایت سے پہلے موجودہ طریقہ کار معلوم کریں۔</span></div>
+      </div>
+    </div>
+
+    <div class="scen-wrap">
+      <h3><span class="en">Free choice or red flag?</span><span class="ur">آزاد مرضی یا خطرے کی علامت؟</span></h3>
+      <p style="margin:0;color:var(--ink-2)"><span class="en">On paper she has a share. Then someone hands her a paper to sign.</span><span class="ur">کاغذ پر اس کا حصہ ہے۔ پھر کوئی اسے دستخط کے لیے کاغذ تھما دیتا ہے۔</span></p>
+      <div class="scens" id="scens"></div>
+    </div>
+
+    <div class="explainer" id="explainer">
+      <div class="ex-top"><h3><span class="en">A one-page explainer</span><span class="ur">ایک صفحے کی وضاحت</span></h3><button class="copybtn" id="copy-exp">Copy explainer text</button></div>
+      <div class="ex-row"><div><span class="dot" style="background:var(--teal)"></span>ASK WHICH LAW APPLIES</div><div><span class="en">The answer depends on the family, the property and the legal circumstances.</span><span class="ur">جواب خاندان، جائیداد اور قانونی حالات پر منحصر ہے۔</span></div></div>
+      <div class="ex-row"><div><span class="dot" style="background:var(--coral)"></span>ASK FOR THE SOURCE</div><div><span class="en">Ask for the relevant provision, judgment or official procedure, not only a claim about tradition.</span><span class="ur">صرف روایت کا دعویٰ نہیں، متعلقہ شق، فیصلہ یا سرکاری طریقہ کار مانگیں۔</span></div></div>
+      <div class="ex-row"><div><span class="dot" style="background:var(--gold)"></span>GET ADVICE BEFORE SIGNING</div><div><span class="en">If pressured to transfer or give up property, seek qualified advice first.</span><span class="ur">اگر جائیداد منتقل کرنے یا چھوڑنے کے لیے دباؤ ہو تو پہلے مستند مشورہ لیں۔</span></div></div>
+      <div class="ex-row"><div><span class="dot" style="background:var(--purple)"></span>KEEP RECORDS SAFELY</div><div><span class="en">Ask which family, identity, property and succession documents are needed, and keep copies.</span><span class="ur">پوچھیں کہ کون سی دستاویزات درکار ہیں، اور ان کی نقول محفوظ رکھیں۔</span></div></div>
+      <div class="ex-row"><div>IMPORTANT</div><div style="color:var(--ink-3)">General educational information, not individual legal advice. Official help links will be added after verification.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EVIDENCE -->
+<section class="chapter" id="evidence">
+  <div class="wrap">
+    <div class="ch-head">
+      <span class="ch-num" style="background:var(--purple)">4</span>
+      <div>
+        <h2><span class="en">The Evidence Room: Show the Paper Trail</span><span class="ur">ثبوت کا کمرہ: کاغذی ثبوت دکھائیں</span></h2>
+        <p><span class="en">Every major claim opens a source card: what the document is, where it came from, the section or page, what it proves, and its limits.</span><span class="ur">ہر بڑا دعویٰ ایک ماخذ کارڈ کھولتا ہے: دستاویز کیا ہے، کہاں سے آئی، کون سی دفعہ یا صفحہ، یہ کیا ثابت کرتی ہے، اور اس کی حدود۔</span></p>
+      </div>
+    </div>
+    <div class="filters" id="filters"></div>
+    <div class="cards" id="cards"></div>
+    <div class="rulebox">
+      <svg viewBox="0 0 70 70" aria-hidden="true"><circle cx="35" cy="35" r="31" fill="none" stroke="var(--gold)" stroke-width="4"/><path d="M35 14v38M20 24h30M14 40l6-16 6 16M44 40l6-16 6 16" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linejoin="round"/><path d="M12 40a8 5 0 0 0 16 0zM42 40a8 5 0 0 0 16 0z" fill="var(--gold)" stroke="var(--ink)" stroke-width="2"/><rect x="27" y="51" width="16" height="4" fill="var(--ink)"/></svg>
+      <div><span class="mono">The evidence rule</span><p class="big" style="margin:0"><span class="en">A law proves what the text says. A judgment proves what the court decided. Neither alone proves how every woman experienced the law.</span><span class="ur">قانون وہی ثابت کرتا ہے جو اس کے متن میں ہے۔ فیصلہ وہی ثابت کرتا ہے جو عدالت نے طے کیا۔ کوئی اکیلا یہ ثابت نہیں کرتا کہ ہر عورت نے قانون کو کیسے برتا۔</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section class="chapter alt" id="research">
+  <div class="wrap">
+    <div class="ch-head">
+      <span class="ch-num" style="background:var(--navy)">5</span>
+      <div>
+        <h2><span class="en">The Research Paper</span><span class="ur">تحقیقی مقالہ</span></h2>
+        <p><span class="en">The study behind this site: the legal history checked against statutory text and judgments, read alongside four interviews with married women in Lahore.</span><span class="ur">اس ویب سائٹ کے پیچھے تحقیق: قانونی تاریخ، قانون کے متن اور عدالتی فیصلوں سے جانچی گئی، اور لاہور کی چار شادی شدہ خواتین کے انٹرویوز کے ساتھ۔</span></p>
+      </div>
+    </div>
+    <div class="paper-card">
+      <div class="paper-cover">
+        <span class="mono">Research paper</span>
+        <h3>Rights on Paper, Shares in Practice</h3>
+        <p class="ptitle-sub">Women’s Inheritance from Colonial Custom to Contemporary Law in Lahore</p>
+        <div class="kw"><span>inheritance</span><span>women’s property rights</span><span>Lahore</span><span>Muslim personal law</span><span>legal pluralism</span><span><i>hiba</i></span><span>Section 498-A</span></div>
+      </div>
+      <div class="paper-side">
+        <span class="mono">The argument in brief</span>
+        <p><span class="en">Pakistan’s reforms are strong on paper but <b>reactive</b>: they protect a woman who already holds a share and chooses to claim it. In the four cases studied, the decisive moment came earlier (a lifetime transfer to sons) or inside the household, where the law rarely reaches.</span><span class="ur">پاکستان کی اصلاحات کاغذ پر مضبوط مگر <b>ردِعمل پر مبنی</b> ہیں: یہ اس عورت کی حفاظت کرتی ہیں جس کے پاس پہلے سے حصہ ہو اور وہ اس کا دعویٰ کرے۔ زیرِ مطالعہ چار کیسز میں فیصلہ کن لمحہ پہلے آیا (زندگی میں بیٹوں کو منتقلی) یا گھر کے اندر، جہاں قانون کم ہی پہنچتا ہے۔</span></p>
+        <div class="stages">
+          <div style="--c:var(--coral)"><b>Woman 2</b><span>Before succession: property transferred to sons in life</span><em>Remedy not used</em></div>
+          <div style="--c:var(--gold)"><b>Woman 3</b><span>After death, settled inside the household</span><em>Remedy not used</em></div>
+          <div style="--c:var(--teal)"><b>Woman 4</b><span>At the division of the estate</span><em>Remedy used</em></div>
+          <div style="--c:var(--purple)"><b>Woman 1</b><span>No contest arose</span><em>Not needed</em></div>
+        </div>
+        <button class="btn primary readbtn" id="read-btn" aria-expanded="false" aria-controls="reader"><span class="en">Read the research paper</span><span class="ur">تحقیقی مقالہ پڑھیں</span></button>
+        <p class="fine"><span class="en">About 6,800 words, with footnotes and bibliography.</span><span class="ur">تقریباً ۶,۸۰۰ الفاظ، حواشی اور کتابیات کے ساتھ۔ مقالہ انگریزی میں ہے۔</span></p>
+      </div>
+    </div>
+    <div class="reader" id="reader" hidden>
+      <nav class="toc" aria-label="Paper contents"><span class="mono">Contents</span><ol id="toc"></ol><button class="replay" id="close-reader">Close paper</button></nav>
+      <article class="paper" id="paper" lang="en">
+        <h2 class="paper-title">Rights on Paper, Shares in Practice: Women’s Inheritance from Colonial Custom to Contemporary Law in Lahore</h2>
+<h2 id="rp-abstract">Abstract</h2>
+<p>After colonial enforcement of agnatic custom, Pakistani inheritance law has developed through the Shariat Application Acts of 1937, 1948 and 1962. Furthermore, in 2011, deprivation was criminalized and a provincial Ombudsperson remedy was created in Punjab. Appellate judgments in 2025 and 2026 declared exclusionary customs void. This article then examines the extent to which this trajectory has enabled or constrained women in claiming their inheritance in Lahore. It combines a doctrinal history checked against statutory text and reported judgments with four semi-structured interviews with women aged approximately 30 to 60. When read against the law, the four cases were decided at four different points. Before succession opened, by a lifetime transfer to sons; inside the household after it opened, at the division of the estate; and nowhere because nobody contested. The article acknowledges that reforms are doctrinally strong but argues that they remain structurally reactive. They act on a woman who already holds a vested share and chooses to assert it while the decisive moments in these cases fell either before or after that point. The cases also suggest that a married woman’s claim is pursued from two households simultaneously. The findings are exploratory and are offered to generate hypotheses. They do not estimate prevalence.</p>
+<p>Keywords: inheritance; women’s property rights; Pakistan; Lahore; Muslim personal law; legal pluralism; <em>hiba</em>; Section 498-A</p>
+<h2 id="rp-introduction">1. Introduction</h2>
+<p>In Pakistan, women usually do not receive their inheritance simply because they make a claim to it. Under Islamic law, and especially as Pakistani courts apply it, upon the owner’s death the estate devolves immediately to the heirs in fixed shares without any action by a court or a male relative. Despite this non-discriminatory fact, women rarely own property.<a href="#rp-fn1" class="footnote-ref" id="rp-fnref1" role="doc-noteref"><sup>1</sup></a> In the 2017-18 Pakistan Demographic and Health Survey, 3 percent of ever-married women owned a house, either alone or jointly, compared with 72 percent of ever-married men; 2 percent of women and 27 percent of men owned land.<a href="#rp-fn2" class="footnote-ref" id="rp-fnref2" role="doc-noteref"><sup>2</sup></a> A 2016 study by the Punjab Commission on the Status of Women found that women owned 10.6 percent of landed property only in Punjab.<a href="#rp-fn3" class="footnote-ref" id="rp-fnref3" role="doc-noteref"><sup>3</sup></a> This distance demonstrated above that exists between a right that vests by operation of law and property that seldom arrives. That is the subject of this article.</p>
+<p>The key question, then, is: to what extent have historical inheritance practices and legal reforms from British India to contemporary Pakistan have enabled or constrained married women in Lahore in claiming their inheritance? The article is particularly invested in married women for two reasons. One, the same survey found out that only 19 percent of married women had been employed at any time in the preceding year, so most of them depended on their husband’s or family’s income.<a href="#rp-fn4" class="footnote-ref" id="rp-fnref4" role="doc-noteref"><sup>4</sup></a> A married woman stands between her natal family and her husband’s household, with both parties having a stake in her inheritance. Nearly every protective instrument applies to a woman who already holds a vested share and elects to assert it showing how though reforms may appear to be doctrinally strong, structurally they remain reactive. In the few cases examined here, these turning moments became evident when, for instance, parents transferred their property to their sons either during their lifetimes or after their deaths. Or, in household negotiations in which dowry was either expected to be excused almost like an obligation or weighed against the goodwill of a brother’s or a groom’s expectations. This is significant because this history bears on the present through the surviving assumptions about inheritance. Considering the aforementioned, the article finally strives to make two contributions. First, it tries to consolidate the legal framework applicable in Lahore by using primary texts and corrects several commonly misstated points, including the 1937 Act’s exclusion of agricultural land the territorial limits of the federal 2020 property-rights statute and the framing of Section 498-A around the opening of succession. Second and lastly, it examines each case according to the stage of the inheritance process at which it was effectively decided. However, the identities of the interview participants have been kept anonymous at their own request for privacy.</p>
+<h2 id="rp-legal-and-historical-framework">2. Legal and historical framework</h2>
+<h3 id="rp-shares-and-vesting">2.1 Shares and vesting</h3>
+<p>According to the Quran, a son inherits the share of two daughters. A single daughter, then, inherits half the estate and two or more daughters inherit two-thirds; each parent of the deceased takes a sixth where he left children; and a widow takes an eighth where her husband left a child.<a href="#rp-fn5" class="footnote-ref" id="rp-fnref5" role="doc-noteref"><sup>5</sup></a> According to Hanafi law, which is followed by most Sunni Muslims in Pakistan whatever remains after these fixed shares passes to the residuaries, namely the nearest male agnates. The Sindh Court applied this rule in 2025 to an estate that was left to a widow and a minor daughter. The residue passed along to his deceased brother’s sons, and his brother’s daughter, as distant kindred, took nothing from it.<a href="#rp-fn6" class="footnote-ref" id="rp-fnref6" role="doc-noteref"><sup>6</sup></a> The Lahore High Court reasoned the same way in <em>Kamal Khan v. Mst. Zainab</em>, holding that a sole surviving child could take no more than half and that “the remaining half must revert to the collaterals”.<a href="#rp-fn7" class="footnote-ref" id="rp-fnref7" role="doc-noteref"><sup>7</sup></a> Only when there is no residuary does the surplus return to the sharers and a spouse shares in that return only if no other heir exists.<a href="#rp-fn8" class="footnote-ref" id="rp-fnref8" role="doc-noteref"><sup>8</sup></a> No such priority is given to make agnates in the Shia law and heirs of the same relationship to the deceased individual, male or female, agnatic or not, exclude more remote heirs alike.<a href="#rp-fn9" class="footnote-ref" id="rp-fnref9" role="doc-noteref"><sup>9</sup></a></p>
+<p>The share vests at death. In <em>Ghulam Ali v. Ghulam Sarwar Naqvi</em>, the Supreme Court held that the estate devolves on the heirs “automatically, and immediately in definite shares,” so that “the brother, the father, husband or son cannot intervene as an intermediary.”<a href="#rp-fn10" class="footnote-ref" id="rp-fnref10" role="doc-noteref"><sup>10</sup></a> It held that a woman’s so-called relinquishment of her share is opposed to public policy so that “the very act of agreement and contract constituting the relinquishment, was void.”<a href="#rp-fn11" class="footnote-ref" id="rp-fnref11" role="doc-noteref"><sup>11</sup></a></p>
+<h3 id="rp-lifetime-transfers">2.2 Lifetime transfers</h3>
+<p>The only thing that is governed by inheritance law is what the owner holds at the time of death. An owner may give away his property by <em>hiba</em> during his life, and it requires a declaration by the donor himself, acceptance by the donee, and delivery of possession.<a href="#rp-fn12" class="footnote-ref" id="rp-fnref12" role="doc-noteref"><sup>12</sup></a> Courts place the burden of proof on the ones benefiting from gifts that specifically exclude daughters. In <em>Islam-ud-Din v. Noor Jehan</em>, the Supreme Court held that a deed by which a father allegedly gifted properties to his sons was unproved because only one of its three attesting witnesses was produced and awarded the deceased sister’s share to her heirs.<a href="#rp-fn13" class="footnote-ref" id="rp-fnref13" role="doc-noteref"><sup>13</sup></a> In <em>Noor Muhammad v. Ghulam Haider</em>, the Court held that the party claiming an oral gift that deprives a widow and daughters must prove every element of it by independent and reliable evidence and that courts must closely scrutinize attempts to deprive women through fabricated gifts, sham documents or manipulated revenue records.<a href="#rp-fn14" class="footnote-ref" id="rp-fnref14" role="doc-noteref"><sup>14</sup></a> However, if a gift is proved and completed then it takes the property out of the estate altogether.</p>
+<p>There is one further rule that remains. A gift made during <em>marz-ul-maut</em>, a malady that induces an apprehension of death and in fact causes it, is restricted like a bequest.<a href="#rp-fn15" class="footnote-ref" id="rp-fnref15" role="doc-noteref"><sup>15</sup></a> A bequest cannot exceed a third of the estate and a bequest to an heir is invalid unless the other heirs consent after the testator’s death.<a href="#rp-fn16" class="footnote-ref" id="rp-fnref16" role="doc-noteref"><sup>16</sup></a> The doctrine is hard to invoke. Applying the Supreme Court’s four-part test from <em>Chanan Bibi v. Muhammad Shafi</em>, the Peshawar High Court in <em>Bakht Zamin</em> upheld a father’s gift to one son although the father was old, ill and died within weeks because no specific fatal disease was proved.</p>
+<h3 id="rp-colonial-custom-and-displacement">2.3 Colonial custom and displacement</h3>
+<p>Section 5 of the Punjab Laws Act 1872 provided that in questions of succession and related matters the rule of decision would be, first, “any custom applicable to the parties concerned” not contrary to justice, equity or good conscience and only then Muslim or Hindu law, as “modified by any such custom.”<a href="#rp-fn17" class="footnote-ref" id="rp-fnref17" role="doc-noteref"><sup>17</sup></a> Colonial courts developed tests for proving custom and settlement officers recorded tribal customs in writing.<a href="#rp-fn18" class="footnote-ref" id="rp-fnref18" role="doc-noteref"><sup>18</sup></a> Under custom, daughters could be excluded by male kin and a widow might hold only a limited estate that ended on her death or remarriage.<a href="#rp-fn19" class="footnote-ref" id="rp-fnref19" role="doc-noteref"><sup>19</sup></a></p>
+<p>The Muslim Personal Law (Shariat) Application Act 1937 made Muslim personal law the rule of decision “notwithstanding any custom or usage to the contrary,” but section 2 expressly saved “questions relating to agricultural land.”<a href="#rp-fn20" class="footnote-ref" id="rp-fnref20" role="doc-noteref"><sup>20</sup></a> As Bina Agarwal has observed of the Act as it still operates in India, that exception left the inheritance of agricultural land to custom and tenure law.<a href="#rp-fn21" class="footnote-ref" id="rp-fnref21" role="doc-noteref"><sup>21</sup></a></p>
+<p>Promulgated on 15 March 1948, in Punjab this gap closed with the Punjab Muslim Personal Law (Shariat) Application Act 1948 whose section 2 applied Muslim personal law to succession “notwithstanding any rule of custom or usage,” without an agricultural-land exception. An estate that had opened under custom before that date could still exclude daughters.<a href="#rp-fn22" class="footnote-ref" id="rp-fnref22" role="doc-noteref"><sup>22</sup></a> Section 3 of the West Pakistan Muslim Personal Law (Shariat) Application Act 1962 then terminated limited estates held by women under custom.<a href="#rp-fn23" class="footnote-ref" id="rp-fnref23" role="doc-noteref"><sup>23</sup></a> In 1981 the Federal Shariat Court declared customary exclusion of female heirs repugnant to Islam; Ordinance XIII of 1983 inserted section 2-A into the 1962 Act; and in 2012 a Supreme Court decision that Batool and Zia-ul-Haq describe as “a dissenting decision” restricted that section’s operation before 15 March 1948.<a href="#rp-fn24" class="footnote-ref" id="rp-fnref24" role="doc-noteref"><sup>24</sup></a></p>
+<p>In urban cities like Lahore, the houses and plots typical of city families made custom lose its legal force in 1937. Custom began to exist only as a practice from then onwards and Livia Holden and Azam Chaudhary show how social actors’ arguments about daughters’ inheritance travel into courtrooms, so that the everyday practice of law tends to perpetuate gender discrimination even where statute forbids it.<a href="#rp-fn25" class="footnote-ref" id="rp-fnref25" role="doc-noteref"><sup>25</sup></a></p>
+<h3 id="rp-statute-and-constitution-after-1947">2.4 Statute and Constitution after 1947</h3>
+<p>Section 4 of the Muslim Family Laws Ordinance 1961 gives the children of a predeceased son or daughter “a share equivalent to the share which such son or daughter … would have received if alive.” Its status remains contested: the Federal Shariat Court declared it repugnant to Islam in <em>Allah Rakha v. Federation of Pakistan</em>, but an appeal has been pending before the Shariat Appellate Bench of the Supreme Court ever since, so the declaration has not taken effect.<a href="#rp-fn26" class="footnote-ref" id="rp-fnref26" role="doc-noteref"><sup>26</sup></a> The Constitution of 1973 protects the right to acquire, hold and dispose of property and guarantees equality before the law and the Supreme Court now reads inheritance disputes through Articles 23, 24 and 25 together with Article 2A.<a href="#rp-fn27" class="footnote-ref" id="rp-fnref27" role="doc-noteref"><sup>27</sup></a> The Prevention of Anti-Women Practices (Criminal Law Amendment) Act 2011, passed by Parliament in December 2011, inserted a chapter of offences against women into the Penal Code.<a href="#rp-fn28" class="footnote-ref" id="rp-fnref28" role="doc-noteref"><sup>28</sup></a> Section 498-A punishes whoever “by deceitful or illegal means deprives any woman from inheriting any movable or immovable property at the time of opening of succession” with five to ten years’ imprisonment, a fine of one million rupees, or both. Section 498-C prohibits compelling, arranging or facilitating a woman’s “marriage with the Holy Quran,” and its explanation deems an oath by a woman on the Qur’an “not to claim her share of inheritance” to be such a marriage.<a href="#rp-fn29" class="footnote-ref" id="rp-fnref29" role="doc-noteref"><sup>29</sup></a></p>
+<h3 id="rp-remedies-available-in-lahore">2.5 Remedies available in Lahore</h3>
+<p>The federal Enforcement of Women’s Property Rights Act 2020 extends only to Islamabad Capital Territory and the Federal Ombudsperson, and there it applies only to property situated there.<a href="#rp-fn30" class="footnote-ref" id="rp-fnref30" role="doc-noteref"><sup>30</sup></a> In Lahore, the operative statute is the Punjab Enforcement of Women’s Property Rights Act 2021 and a woman who has been deprived of ownership or possession of her property may complain to the Ombudsperson Punjab, who may then refer the matter to the Deputy Commissioner for a report within 15 days and should preferably decide within 60 days.<a href="#rp-fn31" class="footnote-ref" id="rp-fnref31" role="doc-noteref"><sup>31</sup></a> The Punjab Letters of Administration and Succession Certificates Act 2021 moved the issue of succession certificates from the civil courts to NADRA which processes applications against the deceased’s Family Registration Certificate.<a href="#rp-fn32" class="footnote-ref" id="rp-fnref32" role="doc-noteref"><sup>32</sup></a></p>
+<h3 id="rp-recent-jurisprudence">2.6 Recent jurisprudence</h3>
+<p>In recent jurisprudence the superior courts hold the most force and in March 2025, a full bench of the Federal Shariat Court declared customs such as <em>chaddar</em> and <em>parchi</em> un-Islamic and illegal, through which women were being deprived of their inheritance.<a href="#rp-fn33" class="footnote-ref" id="rp-fnref33" role="doc-noteref"><sup>33</sup></a> In <em>Abrar Hussain</em>, the Supreme Court held that the state must ensure that every woman is informed of and enabled to claim her share and called for a proactive mechanism to identify and assist women heirs.<a href="#rp-fn34" class="footnote-ref" id="rp-fnref34" role="doc-noteref"><sup>34</sup></a> In <em>Noor Muhammad</em>, it restored the shares of a widow and her daughters in an estate opened in 1955, holding that a mutation serves only fiscal purposes and neither creates nor extinguishes title and that while limitation may matter in some cases, the primary question is whether the alleged gift was proved.<a href="#rp-fn35" class="footnote-ref" id="rp-fnref35" role="doc-noteref"><sup>35</sup></a> However, many issues still remain as apparent in September 2021, when a three-member Supreme Court bench led by Justice Umar Ata Bandial dismissed a claim by the grandchildren of a man who had, in 1935, transferred his property to his son and given his two daughters nothing; because the daughters had never challenged the transfer their children could not claim after their deaths.<a href="#rp-fn36" class="footnote-ref" id="rp-fnref36" role="doc-noteref"><sup>36</sup></a> The ruling has been criticized for making a woman’s vested right lapse if she does not assert it in her lifetime.<a href="#rp-fn37" class="footnote-ref" id="rp-fnref37" role="doc-noteref"><sup>37</sup></a> Table 1 summarises the trajectory.</p>
+<table style="width:97%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 38%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Year</th>
+<th style="text-align: left;">Instrument</th>
+<th style="text-align: left;">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1872</td>
+<td style="text-align: left;">Punjab Laws Act, s. 5</td>
+<td style="text-align: left;">Custom made the first rule of decision in succession</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1937</td>
+<td style="text-align: left;">Shariat Application Act, s. 2</td>
+<td style="text-align: left;">Muslim law replaces custom except for agricultural land</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">1948</td>
+<td style="text-align: left;">Punjab Shariat Application Act (IX of 1948)</td>
+<td style="text-align: left;">Muslim law applied to succession without the agricultural-land exception</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1961</td>
+<td style="text-align: left;">Muslim Family Laws Ordinance, s. 4</td>
+<td style="text-align: left;">Orphaned grandchildren take a predeceased parent’s share; validity contested</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">1962</td>
+<td style="text-align: left;">West Pakistan Shariat Application Act, s. 3</td>
+<td style="text-align: left;">Customary limited estates of women terminated</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1983</td>
+<td style="text-align: left;">Ordinance XIII, inserting s. 2-A</td>
+<td style="text-align: left;">Muslim law applied to estates that had devolved under custom; reach disputed</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">1990</td>
+<td style="text-align: left;"><em>Ghulam Ali v. Ghulam Sarwar Naqvi</em></td>
+<td style="text-align: left;">Shares vest at death; a woman’s relinquishment is void</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2011</td>
+<td style="text-align: left;">Penal Code, ss. 498-A and 498-C</td>
+<td style="text-align: left;">Deprivation at the opening of succession criminalized; oaths not to claim prohibited</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2021</td>
+<td style="text-align: left;">Punjab Women’s Property Rights Act; Punjab Succession Certificates Act</td>
+<td style="text-align: left;">Ombudsperson remedy; NADRA-issued succession certificates</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2021</td>
+<td style="text-align: left;">Supreme Court ruling of 23 September</td>
+<td style="text-align: left;">Children of a woman who never claimed may be barred</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2025–26</td>
+<td style="text-align: left;">FSC ruling; <em>Abrar Hussain</em>; <em>Noor Muhammad</em></td>
+<td style="text-align: left;">Exclusionary customs void; state duty to enable claims; gifts excluding women strictly proved</td>
+</tr>
+</tbody>
+</table>
+<p>Every ruling other than the 2021 ruling, shown in Table 1 is meant to protect women and every one of them works after a woman holds a vested share and someone invokes the law on her behalf. The issue is most visible in the 2021 case because the estate had been emptied because of a father’s lifetime transfer without his daughters ever contesting it and so the right ended with them.</p>
+<h2 id="rp-literature-review">3. Literature review</h2>
+<p>Many scholars are in consensus that Pakistani women are entitled to inheritance but frequently they do not and many scholars differ on why this is the case. Historical work shows that colonial law fixed custom and made it concrete which is why it took Pakistani courts decades after 1948 to stop accepting a proven custom as a justification for the exclusion of daughters.<a href="#rp-fn38" class="footnote-ref" id="rp-fnref38" role="doc-noteref"><sup>38</sup></a> The disinheritance of Muslim women in Punjab from 1526 to the present through court records and Urdu women’s magazines has been traced by Fiza Shahzad who also contrasted public discussion of inheritance with its practice. Holden and Chaudhary supply the most useful frame: custom survives its legal abolition by moving from the rule of decision into the reasoning of those who argue and apply rules.<a href="#rp-fn39" class="footnote-ref" id="rp-fnref39" role="doc-noteref"><sup>39</sup></a> The empirical work in Punjab has shown that the dominant pattern is land surrender. Iram Rubab and Ahmed Usman interviewed 30 women in Mianwali, Rahim Yar Khan and Lahore and found that women commonly gave up their shares to male agnatic heirs and identified a patriarchal family structure, misinterpretation of religious commands, lack of awareness, stringent legal procedures and lower education as the major reasons for this.<a href="#rp-fn40" class="footnote-ref" id="rp-fnref40" role="doc-noteref"><sup>40</sup></a> Javeria Khan, Asma Khalid and Adeela Rehman interviewed nine women and five lawyers and found patriarchal beliefs at work in both institutions and households.<a href="#rp-fn41" class="footnote-ref" id="rp-fnref41" role="doc-noteref"><sup>41</sup></a> Amina Nisar and Rafidah Cusair interviewed nineteen women, six men and three legal experts and identified limited awareness, family pressure and norms that discourage women from claiming their right.<a href="#rp-fn42" class="footnote-ref" id="rp-fnref42" role="doc-noteref"><sup>42</sup></a></p>
+<p>Relinquishment is treated as a third strand and where it is a constrained choice. Agarwal argues that without state social security, many women see their brothers as their main support after their parents’ death and because of that choose to forfeit their claims to preserve that relationship, while a sister who gives up her share is socially cast as a “good sister.”<a href="#rp-fn43" class="footnote-ref" id="rp-fnref43" role="doc-noteref"><sup>43</sup></a> Deniz Kandiyoti’s concept of the patriarchal bargain names the general logic: women strategize within concrete constraints to maximize security.<a href="#rp-fn44" class="footnote-ref" id="rp-fnref44" role="doc-noteref"><sup>44</sup></a> Momoe Makino adds dowry: Her survey in rural Punjab found that the value of a bride’s dowry is associated with her bargaining position in the marital household and her Indian evidence suggests that dowry may compensate for the absence of effective inheritance rights.<a href="#rp-fn45" class="footnote-ref" id="rp-fnref45" role="doc-noteref"><sup>45</sup></a></p>
+<p>Newer works and studies ask whether or not reform has helped this prevailing situation to some extent if at all. Rubab, Beenish Malik, and Zujajah Bakht Aziz interviewed 12 legal, revenue, religious and women’s rights experts and concluded that little has changed in women’s land inheritance in Punjab since 2011, despite changes in digitized records and criminalization.<a href="#rp-fn46" class="footnote-ref" id="rp-fnref46" role="doc-noteref"><sup>46</sup></a> Rubab, Rahat and Yunus interviewed forty women inheritors in Rawalpindi and Bahawalpur, and describe a convergence of private and public patriarchy. There was a mix of emotional blackmail and male relatives’ control over women’s identity documents which drove surrender at home and those who pressed on met courts and offices they experienced as masculine and unsafe. They also find that a claiming woman is often seen as acting for male kin such as her husband or in-laws.<a href="#rp-fn47" class="footnote-ref" id="rp-fnref47" role="doc-noteref"><sup>47</sup></a></p>
+<p>This literature establishes the obstructions in women’s claims to inheritance. However, it does not clearly identify or state when a claim is rendered invalid or when it concerns parents’ lifetime transfers, as distinct from daughters’ relinquishment after death. The present article addresses these two gaps.</p>
+<h2 id="rp-method">4. Method</h2>
+<p>In this study the doctrinal component traces the statutes and judgments in Section 2 using primary texts where they are publicly available. Where these are not available, reported summaries are used instead, which are identified as such in the notes. The empirical component of this article consists of four semi-structured interviews with women aged roughly 30 to 60 who had been through a parental inheritance. The study was designed specifically around married women. Of the four women, one runs her own business and serves as a contrast case and another described herself as lacking independent means.</p>
+<p>These participants were contacted via WhatsApp and interviewed by telephone. They were then asked open-ended questions about how they received or were denied their inheritance, what they knew of their rights, what family or social pressures they faced and what practical difficulties there were for them in this process. The participants were told the purpose of the research and that their participation was voluntary; consent was obtained and they were told they could decline any question if they did not want to answer. Identifying details have been removed and participants are referred to as Woman 1 to Woman 4. Telephone interviews gave participants a measure of privacy on a sensitive subject, at the cost of non-verbal cues. After this, each account was analyzed against the legal sequence set out in Section 2: transfers during the owner’s lifetime, vesting at death, division and registration of shares and enforcement. The aim is analytic because only four cases cannot show how common any pattern is; they can show how the law meets particular family situations and generate hypotheses for larger studies and so being statistical would make no sense. The accounts are retrospective and self-reported and were not checked against title or revenue records. They come only from women, so the reasoning of brothers and parents appears only as reported.</p>
+<h2 id="rp-findings">5. Findings</h2>
+<p>Woman 1 was her parents’ only child. After her father died she continued to live in the family home with her mother and other relatives but years later the property was sold and a new house built which is where she still lives. She described the property and her childhood home as never having belonged to anyone in particular. She never made a formal claim and did not know the legal process because she never needed it. She considered her experience unusual but still observed that Islam clearly grants women a share but that family and social pressure keeps many from ever getting it. Woman 2 received nothing because, before her parents died, the family property had been transferred into her brothers’ names so that, at their deaths, nothing remained in the parents’ names to divide and she was refused a share. She knew in general that women are entitled to inherit under Islamic law but not what her share would have been. She runs her own business and regarded the gifts and dowry her parents had given her as sufficient. Woman 3 also received no share but did not accept gifts or dowry as a substitute; she believed she was owed a portion of her parents’ property. She said that without independent means she lost her future security. The loss followed her into her marriage and her husband later asked why her family had given her nothing, adding to existing difficulties between them.</p>
+<p>Woman 4, however, knew she had a right to inherit and when the family property came to be divided the male relatives argued that they should take the larger portion and that the daughters should receive the share Islamic law provides. She took legal steps to protect her claim and also described a generational change. Women of her mother’s generation, she said, knew little of their protections and treated inheritance as an almost taboo subject for daughters. They accepted what their parents decided. She attributed her own readiness to act to greater awareness, even though she was worried that the old pressure still surrounded her claim.</p>
+<p>Table 2 locates each case in the legal sequence.</p>
+<table style="width:97%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 30%" />
+<col style="width: 35%" />
+<col style="width: 17%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Case</strong></td>
+<td style="text-align: left;"><strong>Stage</strong></td>
+<td style="text-align: left;"><strong>Instrument available at that stage</strong></td>
+<td style="text-align: left;"><strong>Used?</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Woman 2</td>
+<td style="text-align: left;">Before succession opened: lifetime transfer to sons</td>
+<td style="text-align: left;">Challenge to the transfer (proof of gift; <em>marz-ul-maut</em>)</td>
+<td style="text-align: left;">No</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Woman 3</td>
+<td style="text-align: left;">After succession opened, inside the household</td>
+<td style="text-align: left;">Civil suit; Ombudsperson Punjab; s. 498-A</td>
+<td style="text-align: left;">No</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Woman 4</td>
+<td style="text-align: left;">Division of the estate</td>
+<td style="text-align: left;">Civil suit; Ombudsperson Punjab</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Woman 1</td>
+<td style="text-align: left;">No contest arose</td>
+<td style="text-align: left;">None needed</td>
+<td style="text-align: left;">Not applicable</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rp-discussion">6. Discussion</h2>
+<p>The most consequential case till now is that of Woman 2 and it shows the limits of reforms. Her share of the property never even came into existence because the property left her parents’ ownership while they were still alive. Section 498-A punishes deprivation “at the time of opening of succession.” The Punjab Ombudsperson protects a woman’s property and <em>Ghulam Ali</em> voids the relinquishment of a vested share. However, each one of these measures presupposes an estate containing the asset, and here there was no such thing. The only thing she could do was attack the transfer itself and argue that the gift was never completed by the delivery of possession, that it was made during a final illness that needed her consent and that a nominal sale was a sham. The courts have become receptive to such arguments and place the burden on the beneficiaries.<a href="#rp-fn48" class="footnote-ref" id="rp-fnref48" role="doc-noteref"><sup>48</sup></a> But as <em>Bakht Zamin</em> shows, the deathbed route is pretty narrow and every route requires knowledge of the execution – when it happened and under what circumstances – and a willingness to allege that her parents’ last arrangements were truly wrongful and she had none. If it isn’t already difficult to sue brothers, impugning one’s dead parents is an even more difficult task.</p>
+<p>Time was also working against her: the 2021 ruling arose, as we can see, from a lifetime transfer of exactly this kind and barred the daughters’ children because the daughters had remained silent. <em>Noor Muhammad</em> treats proof of the gift as the threshold question and limitation as secondary. Although the law on delay remains unsettled, a woman in Woman 2’s position cannot assume that silence will preserve the claim for her heirs.<a href="#rp-fn49" class="footnote-ref" id="rp-fnref49" role="doc-noteref"><sup>49</sup></a> Her case can be seen as suggesting a promising hypothesis for larger studies. As the moment of succession is better policed through NADRA records, criminal law, and the Ombudsperson, families intent on keeping property in the male line have reason to act earlier, while the owner is still alive. Reform focused on the point of death may partly shift deprivation into lifetime gifts but wouldn’t end it.</p>
+<p>Woman 1’s case can be easily misunderstood as the one where the law is working smoothly but it would be better to understand it as the absence of any and all contestation. A sole daughter takes half her father’s estate, his widow an eighth and each living parent a sixth; under Hanafi law the remainder passes to his nearest male agnates.<a href="#rp-fn50" class="footnote-ref" id="rp-fnref50" role="doc-noteref"><sup>50</sup></a> Her account is consistent with a Shia family with no surviving paternal male relatives, with a lifetime gift to her (a practice noted among Sunni parents with only daughters),<a href="#rp-fn51" class="footnote-ref" id="rp-fnref51" role="doc-noteref"><sup>51</sup></a> or with relatives who simply did not press their shares. In any of these cases, her mother held a share as a widow and it was necessary for there to be a later sale with the co-owner’s participation. The idea of undivided family property which other households use against daughters, protected her because no one was placed to turn it against her.</p>
+<p>It was Woman 4 in whose case the law worked as it was designed because she was aware of her rights and even acted on them. On her account, the male relatives conceded the daughters’ Islamic share and argued only over the larger portion. Any argument that could be made from custom was unavailable to them and so the actual dispute or issue moved to the <em>terms</em> of division where the law could act.</p>
+<p>The final question, whether women have been enabled or constrained still remains a difficult one. At best, it depends on the stage. At the stage of division and enforcement, the law has, in fact, enabled women and it has removed custom as a ground for voided relinquishment and criminalized deprivation at succession and has created a 60-day administrative remedy. A lifetime gift remains the principal lawful means of disinheriting daughters and every remedy after death waits for a woman to invoke it, at a cost that varies with her income and her place in her marriage. The Supreme Court’s 2025 call for a proactive mechanism acknowledges as much. The colonial past matters here mainly as a legacy because we know that custom enforced as law has not applied to urban property since 1937 but the assumption that property belongs to the male line survives visible in the preference for sons and the relatives’ claim to the larger portion. It constrains these women through expectation</p>
+<h2 id="rp-conclusion">7. Conclusion</h2>
+<p>The legal history of women’s inheritance in Punjab is one of steady doctrinal gain. In this history, custom has been displaced for urban property since 1937 and for agricultural land from 1948, relinquishment void since 1990, deprivation a crime since 2011 and exclusionary customs declared illegal in 2025 and 2026. In the four aforementioned cases examined here, these doctrines mattered only when a woman reached the division of an estate and chose to act on the rights she possessed. It did not matter much when the outcome was already fixed much earlier by measures such as lifetime transfers to sons, in household bargains over a woman’s dowry, goodwill or a husband’s expectations. Three directions follow from this. Research should now record when a claim is lost and distinguish lifetime transfers from relinquishment after death which would allow the displacement hypothesis to be tested at scale. Institutions could link death registration, heir verification and land records so that every female heir learns of her share and of the Ombudsperson when a death is registered.<a href="#rp-fn52" class="footnote-ref" id="rp-fnref52" role="doc-noteref"><sup>52</sup></a> And law reform should scrutinize parental gifts that exclude daughters while respecting an owner’s right to dispose of property in life.</p>
+<p>A right that vests automatically must still be defended. Till now, Pakistan has largely settled what a woman is owed. What remains is how to deliver it and how that woman is meant to receive what she is owed. This is something that is yet to be settled.</p>
+<h2 id="rp-bibliography">Bibliography</h2>
+<h3 id="rp-statutes-and-official-documents">Statutes and official documents</h3>
+<p>Enforcement of Women’s Property Rights Act 2020 (Act XII of 2020). <a href="https://lpr.adb.org/sites/default/files/2024-07/pakistan-enforcement-of-women%27s-property-rights-act-2020.pdf"><u>https://lpr.adb.org/sites/default/files/2024-07/pakistan-enforcement-of-women%27s-property-rights-act-2020.pdf</u></a>.</p>
+<p>Federal Shariat Court. “Federal Shariat Court Declares Customary Practice Denying Women’s Inheritance Rights as Un-Islamic.” Press release, March 19, 2025. <a href="https://federalshariatcourt.gov.pk/wp-content/uploads/2019/01/Press%20Release/2025/Press%20Release%20Eng%2019%202025.pdf"><u>https://federalshariatcourt.gov.pk/wp-content/uploads/2019/01/Press%20Release/2025/Press%20Release%20Eng%2019%202025.pdf</u></a>.</p>
+<p>Muslim Personal Law (Shariat) Application Act 1937. <a href="https://www.casemine.com/act/in/5a979ddc4a93263ca60b7542"><u>https://www.casemine.com/act/in/5a979ddc4a93263ca60b7542</u></a>.</p>
+<p>National Institute of Population Studies (NIPS) and ICF. <em>2017–18 Pakistan Demographic and Health Survey: Key Findings</em>. Islamabad and Rockville, MD: NIPS and ICF, 2019. <a href="https://dhsprogram.com/pubs/pdf/SR257/SR257.pdf"><u>https://dhsprogram.com/pubs/pdf/SR257/SR257.pdf</u></a>.</p>
+<p>Prevention of Anti-Women Practices (Criminal Law Amendment) Act 2011. <a href="https://isj.org.pk/the-prevention-of-anti-women-practices-act-2011/"><u>https://isj.org.pk/the-prevention-of-anti-women-practices-act-2011/</u></a>.</p>
+<p>Punjab Commission on the Status of Women. “Punjab Enforcement of Women Property Right Act, 2021.” <a href="https://pcsw.punjab.gov.pk/node/536"><u>https://pcsw.punjab.gov.pk/node/536</u></a>.</p>
+<p>Punjab Letters of Administration and Succession Certificates Act 2021 (Act IX of 2021). <a href="https://khalidzafar.com/wp-content/files_mf/1633943950punjablettersofadministrationandsuccessioncertificatesact2021pdf1.pdf"><u>https://khalidzafar.com/wp-content/files_mf/1633943950punjablettersofadministrationandsuccessioncertificatesact2021pdf1.pdf</u></a>.</p>
+<p>Qur’an. Saheeh International translation. <a href="https://legacy.quran.com/4/11-107"><u>https://legacy.quran.com/4/11-107</u></a>.</p>
+<h3 id="rp-cases">Cases</h3>
+<p><em>Abrar Hussain v. Mst. Bibi Shahida</em>. PLD 2026 SC 42 (C.P. No. 567-K of 2023).</p>
+<p><em>Atta Muhammad v. Abdul Qadir</em>. Civil Revision No. S-40 of 2010. Sindh High Court, Sukkur Bench, February 14, 2022. <a href="https://caselaw.shc.gov.pk/caselaw/view-file/MTU3NTU1Y2Ztcy1kYzgz"><u>https://caselaw.shc.gov.pk/caselaw/view-file/MTU3NTU1Y2Ztcy1kYzgz</u></a>.</p>
+<p><em>Bakht Zamin v. Said Majid</em>. 1996 CLC 1805 (Peshawar High Court). <a href="https://pakistancaselaw.com/case/66042/bakht-zamin-vs-said-majid-1996-clc-1805"><u>https://pakistancaselaw.com/case/66042/bakht-zamin-vs-said-majid-1996-clc-1805</u></a>.</p>
+<p><em>Ghulam Ali v. Ghulam Sarwar Naqvi</em>. PLD 1990 SC 1. <a href="https://lpr.adb.org/resource/ghulam-ali-v-ghulam-sarwar-naqvi-pld-1990-sc-1-pakistan"><u>https://lpr.adb.org/resource/ghulam-ali-v-ghulam-sarwar-naqvi-pld-1990-sc-1-pakistan</u></a>.</p>
+<p><em>In re Anam Jawed</em>. S.M.A. No. 315 of 2019. Sindh High Court, January 6, 2020. https://caselaw.shc.gov.pk/caselaw/view-file/MTQzMDMzY2Ztcy1kYzgz.</p>
+<p><em>Islam-ud-Din v. Noor Jehan</em>. 2016 SCMR 986. <a href="https://lpr.adb.org/resource/islam-ud-din-v-noor-jehan-2016-scmr-986-pakistan"><u>https://lpr.adb.org/resource/islam-ud-din-v-noor-jehan-2016-scmr-986-pakistan</u></a>.</p>
+<p><em>Mohamed v. Kunhalankutty</em>. R.S.A. No. 607 of 2023. Kerala High Court, October 19, 2023. <a href="https://www.livelaw.in/pdf_upload/2130000060720231-1-501039.pdf"><u>https://www.livelaw.in/pdf_upload/2130000060720231-1-501039.pdf</u></a>.</p>
+<p><em>Mst. Naila Shahbaz v. Amna Ashfaq</em>. High Court Appeal No. 219 of 2024. Sindh High Court, January 30, 2025. <a href="https://caselaw.shc.gov.pk/caselaw/view-file/MjMwMDM1Y2Ztcy1kYzgz"><u>https://caselaw.shc.gov.pk/caselaw/view-file/MjMwMDM1Y2Ztcy1kYzgz</u></a>.</p>
+<p><em>Mst. Noor Fatima v. Shah Ji</em>. 2002 CLC 689. <a href="https://pakcaselaw.duckdns.org/case/90506/mst-noor-fatima-vs-shah-ji-2002-clc-689"><u>https://pakcaselaw.duckdns.org/case/90506/mst-noor-fatima-vs-shah-ji-2002-clc-689</u></a>.</p>
+<p><em>Noor Muhammad v. Ghulam Haider</em>. C.P.L.A. No. 1103-L of 2016. Supreme Court of Pakistan, Lahore Registry, 2026.</p>
+<p><em>Quratul Ain Zafar v. Arsalan Hameed</em>. Federal Ombudsperson for Protection Against Harassment of Women at the Workplace. <a href="https://www.fospah.gov.pk/Detail/MGY0MDZiODUtOTU3NS00ZjBlLWExNjAtMTI0YjdlMGRiZDEz"><u>https://www.fospah.gov.pk/Detail/MGY0MDZiODUtOTU3NS00ZjBlLWExNjAtMTI0YjdlMGRiZDEz</u></a></p>
+<p><em>Wali v. Sardara</em>. PLD 1978 Lahore 1392. <a href="https://pakcaselaw.duckdns.org/case/9621/wali-vs-sardara-pld-1978-lahore-1392"><u>https://pakcaselaw.duckdns.org/case/9621/wali-vs-sardara-pld-1978-lahore-1392</u></a>.</p>
+<h3 id="rp-books-articles-and-theses">Books, articles and theses</h3>
+<p>Agarwal, Bina. <em>A Field of One’s Own: Gender and Land Rights in South Asia</em>. Cambridge: Cambridge University Press, 1994.</p>
+<p>Batool, Usmat, and Muhammad Zia-ul-Haq. “Custom and Female Right of Inheritance: An Appraisal of the Evolution of Judicial Decisions in British India and Pakistan.” <em>Islamic Studies</em> 58, no. 1 (2019): 51–81. <a href="https://doi.org/10.52541/isiri.v58i1.606"><u>https://doi.org/10.52541/isiri.v58i1.606</u></a>.</p>
+<p>Coulson, N. J. <em>Succession in the Muslim Family</em>. Cambridge: Cambridge University Press, 1971.</p>
+<p>Holden, Livia, and Azam Chaudhary. “Daughters’ Inheritance, Legal Pluralism, and Governance in Pakistan.” <em>Journal of Legal Pluralism and Unofficial Law</em> 45, no. 1 (2013): 104–23. <a href="https://doi.org/10.1080/07329113.2013.781447"><u>https://doi.org/10.1080/07329113.2013.781447</u></a>.</p>
+<p>Kandiyoti, Deniz. “Bargaining with Patriarchy.” <em>Gender &amp; Society</em> 2, no. 3 (1988): 274–90.</p>
+<p>Khan, Javeria, Asma Khalid, and Adeela Rehman. “Women’s Inheritance Rights in the West Pakistan Muslim Personal Law, Shariat Act 1962: An Analysis of Practices.” <em>Journal of Gender and Social Issues</em> 21, no. 1 (2022). <a href="https://jgsi.fjwu.edu.pk/index.php/jgsi/article/view/338"><u>https://jgsi.fjwu.edu.pk/index.php/jgsi/article/view/338</u></a>.</p>
+<p>Makino, Momoe. “Marriage, Dowry, and Women’s Status in Rural Punjab, Pakistan.” <em>Journal of Population Economics</em> 32, no. 3 (2019): 769–97.</p>
+<p>Mohmand, Mir Asfandyar Khan. “Inheritance Rights of Orphaned Grandchildren: A Straightforward Provision of Law?” <em>LUMS Law Journal</em>. <a href="https://sahsol.lums.edu.pk/node/12851"><u>https://sahsol.lums.edu.pk/node/12851</u></a>.</p>
+<p>Nisar, Amina, and Rafidah binti Mohamad Cusairi. “Islamic Inheritance Rights for Women in Pakistan: Exploring Legal Safeguards and Social Challenges.” <em>Journal of Islamic Thought and Civilization</em> 15, no. 1 (2025): 146–65. <a href="https://doi.org/10.32350/jitc.151.09"><u>https://doi.org/10.32350/jitc.151.09</u></a>.</p>
+<p>Rubab, Iram, Beenish Malik, and Zujajah Bakht Aziz. “Do Legal and Institutional Reforms in Punjab, Pakistan Protect Women’s Inherited Land Rights?” <em>Journal of International Women’s Studies</em> 25, no. 4 (2023): article 5. <a href="https://vc.bridgew.edu/jiws/vol25/iss4/5"><u>https://vc.bridgew.edu/jiws/vol25/iss4/5</u></a>.</p>
+<p>Rubab, Iram, Rahla Rahat, and Asma Yunus. “Convergence of Private and Public Patriarchy: Challenges of Safe Spaces and Places for Women Claimants of Inheritance in Punjab, Pakistan.” <em>Pakistan Social Sciences Review</em> 7, no. 3 (2023): 49–60. <a href="https://doi.org/10.35484/pssr.2023(7-III)05"><u>https://doi.org/10.35484/pssr.2023(7-III)05</u></a>.</p>
+<p>Rubab, Iram, and Ahmed Usman. “Women’s Right of Inheritance: Choices and Challenges in Punjab.” <em>Journal of Islamic Thought and Civilization</em> 8, no. 2 (2018): 95–109. <a href="https://journals.umt.edu.pk/index.php/JITC/article/view/107"><u>https://journals.umt.edu.pk/index.php/JITC/article/view/107</u></a>.</p>
+<p>Shahzad, Fiza. “Public Perception vs. Practice: Tracing Muslim Women’s (Dis)Inheritance in Punjab, 1526–Present.” MA thesis, Tufts University, 2023. <a href="https://dl.tufts.edu/concern/pdfs/8049gm18h"><u>https://dl.tufts.edu/concern/pdfs/8049gm18h</u></a>.</p>
+<h3 id="rp-reports-commentary-and-news">Reports, commentary and news</h3>
+<p>Abbas, Mazhar. “Protecting Women’s Rights.” <em>The News on Sunday</em>, April 26, 2026. <a href="https://www.thenews.pk/tns/detail/1411879-protecting-womens-ri%20ghts"><u>https://www.thenews.pk/tns/detail/1411879-protecting-womens-ri ghts</u></a>.</p>
+<p>Associated Press of Pakistan. “Oral Gift Must Be Strictly Proved Before Women Can Be Deprived of Inheritance Rights: SC.” July 1, 2026. <a href="https://www.app.com.pk/national/oral-gift-must-be-strictly-proved-before-women-can-be-deprived-of-inheritance-rights-sc/"><u>https://www.app.com.pk/national/oral-gift-must-be-strictly-proved-before-women-can-be-deprived-of-inheritance-rights-sc/</u></a>.</p>
+<p><em>Daily Star</em> (Dhaka). “Law Commission’s Report on Daughter’s Share in the Succession of Parents’ Property in Absence of Son.” June 9, 2012. <a href="https://www.thedailystar.net/law/2012/06/02/report.htm"><u>https://www.thedailystar.net/law/2012/06/02/report.htm</u></a>.</p>
+<p>Equal Rights Trust. “Criminal Law Amendments to Protect Women and Children Passed by Pakistani Parliament.” <a href="https://www.equalrightstrust.org/news/criminal-law-amendments-protect-women-and-children-passed-pakistani-parliament"><u>https://www.equalrightstrust.org/news/criminal-law-amendments-protect-women-and-children-passed-pakistani-parliament</u></a>.</p>
+<p><em>Geo News</em>. “Women Can Only Claim Inheritance Within Their Lifetime; Children to Have No Claim Later: SC.” September 23, 2021. <a href="https://www.geo.tv/latest/372139-women-can-only-claim-inheritance-within-their-lifetime-children-to-have-no-claim-later-sc"><u>https://www.geo.tv/latest/372139-women-can-only-claim-inheritance-within-their-lifetime-children-to-have-no-claim-later-sc</u></a>.</p>
+<p>Hameed, Najdah, and Muhammad Imran. “SC Rules in the Female Inheritance Case After 71 Long Years.” <em>Minute Mirror</em>, July 7, 2026. <a href="https://minutemirror.com.pk/sc-rules-in-the-female-inheritance-case-after-71-long-years-586297/"><u>https://minutemirror.com.pk/sc-rules-in-the-female-inheritance-case-after-71-long-years-586297/</u></a>.</p>
+<p>Iqbal, Nasir, and Umer Mehtab. “State Must Ensure Every Woman Receives Her Rightful Share in Inheritance: Pakistan Top Court.” <em>Dawn</em>, via Asia News Network, November 17, 2025. <a href="https://asianews.network/state-must-ensure-every-woman-receives-her-rightful-share-in-inheritance-pakistan-top-court/"><u>https://asianews.network/state-must-ensure-every-woman-receives-her-rightful-share-in-inheritance-pakistan-top-court/</u></a>.</p>
+<p>Josh and Mak International. “Legal Advice on the Preparation, Advice and Review Pertaining to Hiba (Gift), Muslim and Non-Muslim Law of Wills and Succession.” Updated July 16, 2024. <a href="https://joshandmakinternational.com/advice-on-non-muslim-muslim-and-foreign-wills-law-of-succession/"><u>https://joshandmakinternational.com/advice-on-non-muslim-muslim-and-foreign-wills-law-of-succession/</u></a>.</p>
+<p>Khalid Zafar &amp; Associates. “The Newly Promulgated Succession Act, 2021 and Its Impact on Lawyer’s Livelihood.” <a href="https://khalidzafar.com/the-newly-promulgated-succession-act-2021-and-its-impact-on-lawyers-livelihood/"><u>https://khalidzafar.com/the-newly-promulgated-succession-act-2021-and-its-impact-on-lawyers-livelihood/</u></a>.</p>
+<p>Makino, Momoe. “Dowry and Women’s Empowerment: Why Does the Practice Remain in South Asia?” IDE Research Columns. Institute of Developing Economies, October 2022.</p>
+<p>Nawaz, Taiba. “Abrar Hussain v. Mst. Bibi Shahida and Others.” LEAP Pakistan, March 1, 2026. <a href="https://leappakistan.com/abrar-hussain-v-mst-bibi-shahida-and-others/"><u>https://leappakistan.com/abrar-hussain-v-mst-bibi-shahida-and-others/</u></a>.</p>
+<p>Sehgal, Rashme. “‘Women Who Own Property Face Lower Risk of Domestic Violence’—Prof Bina Agarwal.”</p>
+<aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr />
+<ol>
+<li id="rp-fn1"><p><em>Ghulam Ali v. Ghulam Sarwar Naqvi</em>, PLD 1990 SC 1; case summary in Asian Development Bank, Law and Policy Reform database, <a href="https://lpr.adb.org/resource/ghulam-ali-v-ghulam-sarwar-naqvi-pld-1990-sc-1-pakistan"><u>https://lpr.adb.org/resource/ghulam-ali-v-ghulam-sarwar-naqvi-pld-1990-sc-1-pakistan</u></a>, accessed October 16, 2026.<a href="#rp-fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn2"><p>National Institute of Population Studies (NIPS) and ICF, <em>2017–18 Pakistan Demographic and Health Survey: Key Findings</em> (Islamabad and Rockville, MD: NIPS and ICF, 2019), 14, <a href="https://dhsprogram.com/pubs/pdf/SR257/SR257.pdf"><u>https://dhsprogram.com/pubs/pdf/SR257/SR257.pdf</u></a>.<a href="#rp-fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn3"><p>Punjab Commission on the Status of Women (2016), as reported in Iram Rubab, Rahla Rahat, and Asma Yunus, “Convergence of Private and Public Patriarchy: Challenges of Safe Spaces and Places for Women Claimants of Inheritance in Punjab, Pakistan,” <em>Pakistan Social Sciences Review</em> 7, no. 3 (2023): 49, <a href="https://doi.org/10.35484/pssr.2023(7-III)05"><u>https://doi.org/10.35484/pssr.2023(7-III)05</u></a>.<a href="#rp-fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn4"><p>NIPS and ICF, <em>Key Findings</em>, 14.<a href="#rp-fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn5"><p>Qur’an 4:11–12, Saheeh International translation, https://legacy.quran.com/4/11-107, accessed October 16, 2026.<a href="#rp-fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn6"><p><em>Mst. Naila Shahbaz v. Amna Ashfaq</em>, High Court Appeal No. 219 of 2024 (Sindh High Court, January 30, 2025), paras. 2–8, <a href="https://caselaw.shc.gov.pk/caselaw/view-file/MjMwMDM1Y2Ztcy1kYzgz"><u>https://caselaw.shc.gov.pk/caselaw/view-file/MjMwMDM1Y2Ztcy1kYzgz</u></a>.<a href="#rp-fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn7"><p><em>Kamal Khan v. Mst. Zainab</em>, as quoted in Mir Asfandyar Khan Mohmand, “Inheritance Rights of Orphaned Grandchildren: A Straightforward Provision of Law?,” <em>LUMS Law Journal</em>, <a href="https://sahsol.lums.edu.pk/node/12851"><u>https://sahsol.lums.edu.pk/node/12851</u></a>, accessed October 16, 2026.<a href="#rp-fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn8"><p><em>In re Anam Jawed</em>, S.M.A. No. 315 of 2019 (Sindh High Court, January 6, 2020), quoting <em>Abdul Khaliq v. Fazalur Rehman</em>, PLD 2004 SC 768, <a href="https://caselaw.shc.gov.pk/caselaw/view-file/MTQzMDMzY2Ztcy1kYzgz"><u>https://caselaw.shc.gov.pk/caselaw/view-file/MTQzMDMzY2Ztcy1kYzgz</u></a>.<a href="#rp-fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn9"><p>N. J. Coulson, <em>Succession in the Muslim Family</em> (Cambridge: Cambridge University Press, 1971), 108, 133, as cited in Law Commission of Bangladesh, report on a daughter’s share in the absence of a son, summarised in “Law Commission’s Report on Daughter’s Share in the Succession of Parents’ Property in Absence of Son,” <em>Daily Star</em> (Dhaka), June 9, 2012, <a href="https://www.thedailystar.net/law/2012/06/02/report.htm"><u>https://www.thedailystar.net/law/2012/06/02/report.htm</u></a>.<a href="#rp-fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn10"><p><em>Ghulam Ali</em>, ADB summary.<a href="#rp-fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn11"><p><em>Ghulam Ali</em>, as quoted in <em>Atta Muhammad v. Abdul Qadir</em>, Civil Revision No. S-40 of 2010 (Sindh High Court, Sukkur Bench, February 14, 2022), <a href="https://caselaw.shc.gov.pk/caselaw/view-file/MTU3NTU1Y2Ztcy1kYzgz"><u>https://caselaw.shc.gov.pk/caselaw/view-file/MTU3NTU1Y2Ztcy1kYzgz</u></a>.<a href="#rp-fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn12"><p>Najdah Hameed and Muhammad Imran, “SC Rules in the Female Inheritance Case After 71 Long Years,” <em>Minute Mirror</em>, July 7, 2026, discussing <em>Noor Muhammad v. Ghulam Haider</em>, C.P.L.A. No. 1103-L of 2016, <a href="https://minutemirror.com.pk/sc-rules-in-the-female-inheritance-case-after-71-long-years-586297/"><u>https://minutemirror.com.pk/sc-rules-in-the-female-inheritance-case-after-71-long-years-586297/</u></a>.<a href="#rp-fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn13"><p><em>Islam-ud-Din v. Noor Jehan</em>, 2016 SCMR 986; ADB summary, https://lpr.adb.org/resource/islam-ud-din-v-noor-jehan-2016-scmr-986-pakistan, accessed October 16, 2026.<a href="#rp-fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn14"><p>“Oral Gift Must Be Strictly Proved Before Women Can Be Deprived of Inheritance Rights: SC,” Associated Press of Pakistan, July 1, 2026, <a href="https://www.app.com.pk/national/oral-gift-must-be-strictly-proved-before-women-can-be-deprived-of-inheritance-rights-sc/"><u>https://www.app.com.pk/national/oral-gift-must-be-strictly-proved-before-women-can-be-deprived-of-inheritance-rights-sc/</u></a>.<a href="#rp-fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn15"><p><em>Bakht Zamin v. Said Majid</em>, 1996 CLC 1805 (Peshawar High Court), para. 9, citing para. 135 of Mulla’s <em>Principles of Mahomedan Law</em>, <a href="https://pakistancaselaw.com/case/66042/bakht-zamin-vs-said-majid-1996-clc-1805"><u>https://pakistancaselaw.com/case/66042/bakht-zamin-vs-said-majid-1996-clc-1805</u></a>.<a href="#rp-fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn16"><p>D. F. Mulla, <em>Principles of Mahomedan Law</em>, paras. 117–18, as quoted in <em>Mohamed v. Kunhalankutty</em>, R.S.A. No. 607 of 2023 (Kerala High Court, October 19, 2023), <a href="https://www.livelaw.in/pdf_upload/2130000060720231-1-501039.pdf"><u>https://www.livelaw.in/pdf_upload/2130000060720231-1-501039.pdf</u></a>; on deathbed gifts in Pakistan, see Josh and Mak International, “Legal Advice on the Preparation, Advice and Review Pertaining to Hiba (Gift), Muslim and Non-Muslim Law of Wills and Succession,” updated July 16, 2024, <a href="https://joshandmakinternational.com/advice-on-non-muslim-muslim-and-foreign-wills-law-of-succession/"><u>https://joshandmakinternational.com/advice-on-non-muslim-muslim-and-foreign-wills-law-of-succession/</u></a>.<a href="#rp-fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn17"><p>Punjab Laws Act 1872, s. 5, as reproduced in <em>Mst. Noor Fatima v. Shah Ji</em>, 2002 CLC 689, https://pakcaselaw.duckdns.org/case/90506/mst-noor-fatima-vs-shah-ji-2002-clc-689.<a href="#rp-fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn18"><p>Usmat Batool and Muhammad Zia-ul-Haq, “Custom and Female Right of Inheritance: An Appraisal of the Evolution of Judicial Decisions in British India and Pakistan,” <em>Islamic Studies</em> 58, no. 1 (2019): 51–81, https://doi.org/10.52541/isiri.v58i1.606.<a href="#rp-fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn19"><p><em>Noor Fatima</em>, 2002 CLC 689; <em>Wali v. Sardara</em>, PLD 1978 Lahore 1392, https://pakcaselaw.duckdns.org/case/9621/wali-vs-sardara-pld-1978-lahore-1392.<a href="#rp-fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn20"><p>Muslim Personal Law (Shariat) Application Act 1937, s. 2, https://www.casemine.com/act/in/5a979ddc4a93263ca60b7542. The text cited is the Act as it survives in India; Pakistan replaced it in 1962.<a href="#rp-fnref20" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn21"><p>Rashme Sehgal, “‘Women Who Own Property Face Lower Risk of Domestic Violence’—Prof Bina Agarwal,” <em>NewsClick</em>, September 29, 2020, <a href="https://www.newsclick.in/Women-Who-Own-Property-Face-Lower-Risk-Domestic-Violence"><u>https://www.newsclick.in/Women-Who-Own-Property-Face-Lower-Risk-Domestic-Violence</u></a>.<a href="#rp-fnref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn22"><p><em>Noor Fatima</em>, 2002 CLC 689, reproducing s. 2 of Act IX of 1948.<a href="#rp-fnref22" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn23"><p><em>Wali v. Sardara</em>, PLD 1978 Lahore 1392.<a href="#rp-fnref23" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn24"><p>Batool and Zia-ul-Haq, “Custom and Female Right of Inheritance”; <em>Noor Fatima</em>, 2002 CLC 689.<a href="#rp-fnref24" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn25"><p>Livia Holden and Azam Chaudhary, “Daughters’ Inheritance, Legal Pluralism, and Governance in Pakistan,” <em>Journal of Legal Pluralism and Unofficial Law</em> 45, no. 1 (2013): 104–23, https://doi.org/10.1080/07329113.2013.781447.<a href="#rp-fnref25" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn26"><p>Mohmand, “Inheritance Rights of Orphaned Grandchildren.”<a href="#rp-fnref26" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn27"><p>Hameed and Imran, “SC Rules,” on <em>Noor Muhammad</em>.<a href="#rp-fnref27" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn28"><p>Equal Rights Trust, “Criminal Law Amendments to Protect Women and Children Passed by Pakistani Parliament,” https://www.equalrightstrust.org/news/criminal-law-amendments-protect-women-and-children-passed-pakistani-parliament, accessed October 16, 2026.<a href="#rp-fnref28" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn29"><p>Prevention of Anti-Women Practices (Criminal Law Amendment) Act 2011, s. 3, inserting Pakistan Penal Code, ss. 498-A–498-C, https://isj.org.pk/the-prevention-of-anti-women-practices-act-2011/, accessed October 16, 2026.<a href="#rp-fnref29" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn30"><p>Enforcement of Women’s Property Rights Act 2020 (Act XII of 2020), s. 1(2), https://lpr.adb.org/sites/default/files/2024-07/pakistan-enforcement-of-women%27s-property-rights-act-2020.pdf; Federal Ombudsperson for Protection Against Harassment of Women at the Workplace, <em>Quratul Ain Zafar v. Arsalan Hameed</em>, final order, <a href="https://www.fospah.gov.pk/SiteImage/Misc/files/Quratul%20Ain%20Zafar%20Vs%20Arsalan%20Hameed.pdf"><u>https://www.fospah.gov.pk/SiteImage/Misc/files/Quratul%20Ain%20Zafar%20Vs%20Arsalan%20Hameed.pdf</u></a>.<a href="#rp-fnref30" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn31"><p>Punjab Commission on the Status of Women, “Punjab Enforcement of Women Property Right Act, 2021,” https://pcsw.punjab.gov.pk/node/536, accessed October 16, 2026.<a href="#rp-fnref31" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn32"><p>Punjab Letters of Administration and Succession Certificates Act 2021 (Act IX of 2021), https://khalidzafar.com/wp-content/files_mf/1633943950punjablettersofadministrationandsuccessioncertificatesact2021pdf1.pdf; Khalid Zafar &amp; Associates, “The Newly Promulgated Succession Act, 2021 and Its Impact on Lawyer’s Livelihood,” <a href="https://khalidzafar.com/the-newly-promulgated-succession-act-2021-and-its-impact-on-lawyers-livelihood/"><u>https://khalidzafar.com/the-newly-promulgated-succession-act-2021-and-its-impact-on-lawyers-livelihood/</u></a>, accessed October 16, 2026.<a href="#rp-fnref32" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn33"><p>Federal Shariat Court, “Federal Shariat Court Declares Customary Practice Denying Women’s Inheritance Rights as Un-Islamic,” press release, March 19, 2025, <a href="https://federalshariatcourt.gov.pk/wp-content/uploads/2019/01/Press%20Release/2025/Press%20Release%20Eng%2019%202025.pdf"><u>https://federalshariatcourt.gov.pk/wp-content/uploads/2019/01/Press%20Release/2025/Press%20Release%20Eng%2019%202025.pdf</u></a>. LEAP Pakistan’s report on <em>Abrar Hussain</em> cites the Federal Shariat Court ruling relied on there as <em>Syeda Fauzia Shah v. Federation of Pakistan</em>, PLD 2025 FSC 1.<a href="#rp-fnref33" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn34"><p>Iqbal and Mehtab, “State Must Ensure.”<a href="#rp-fnref34" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn35"><p>“Oral Gift Must Be Strictly Proved,” Associated Press of Pakistan.<a href="#rp-fnref35" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn36"><p>“Women Can Only Claim Inheritance Within Their Lifetime; Children to Have No Claim Later: SC,” <em>Geo News</em>, September 23, 2021, <a href="https://www.geo.tv/latest/372139-women-can-only-claim-inheritance-within-their-lifetime-children-to-have-no-claim-later-sc"><u>https://www.geo.tv/latest/372139-women-can-only-claim-inheritance-within-their-lifetime-children-to-have-no-claim-later-sc</u></a>.<a href="#rp-fnref36" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn37"><p>Mazhar Abbas, “Protecting Women’s Rights,” <em>The News on Sunday</em>, April 26, 2026, <a href="https://www.thenews.pk/tns/detail/1411879-protecting-womens-rights"><u>https://www.thenews.pk/tns/detail/1411879-protecting-womens-rights</u></a>.<a href="#rp-fnref37" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn38"><p>Batool and Zia-ul-Haq, “Custom and Female Right of Inheritance.”<a href="#rp-fnref38" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn39"><p>Holden and Chaudhary, “Daughters’ Inheritance.”<a href="#rp-fnref39" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn40"><p>Iram Rubab and Ahmed Usman, “Women’s Right of Inheritance: Choices and Challenges in Punjab,” <em>Journal of Islamic Thought and Civilization</em> 8, no. 2 (2018): 95–109, https://journals.umt.edu.pk/index.php/JITC/article/view/107.<a href="#rp-fnref40" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn41"><p>Javeria Khan, Asma Khalid, and Adeela Rehman, “Women’s Inheritance Rights in the West Pakistan Muslim Personal Law, Shariat Act 1962: An Analysis of Practices,” <em>Journal of Gender and Social Issues</em> 21, no. 1 (2022), https://jgsi.fjwu.edu.pk/index.php/jgsi/article/view/338.<a href="#rp-fnref41" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn42"><p>Amina Nisar and Rafidah binti Mohamad Cusairi, “Islamic Inheritance Rights for Women in Pakistan: Exploring Legal Safeguards and Social Challenges,” <em>Journal of Islamic Thought and Civilization</em> 15, no. 1 (2025): 146–65, https://doi.org/10.32350/jitc.151.09.<a href="#rp-fnref42" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn43"><p>Bina Agarwal, <em>A Field of One’s Own: Gender and Land Rights in South Asia</em> (Cambridge: Cambridge University Press, 1994); Sehgal, “Women Who Own Property.”<a href="#rp-fnref43" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn44"><p>Deniz Kandiyoti, “Bargaining with Patriarchy,” <em>Gender &amp; Society</em> 2, no. 3 (1988): 274–90, https://giwps.georgetown.edu/resource/bargaining-with-patriarchy/.<a href="#rp-fnref44" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn45"><p>Momoe Makino, “Dowry and Women’s Empowerment: Why Does the Practice Remain in South Asia?,” IDE Research Columns, Institute of Developing Economies, October 2022, https://www.ide.go.jp/English/ResearchColumns/Columns/2022/makino_momoe_02.html; Momoe Makino, “Marriage, Dowry, and Women’s Status in Rural Punjab, Pakistan,” <em>Journal of Population Economics</em> 32, no. 3 (2019): 769–97.<a href="#rp-fnref45" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn46"><p>Iram Rubab, Beenish Malik, and Zujajah Bakht Aziz, “Do Legal and Institutional Reforms in Punjab, Pakistan Protect Women’s Inherited Land Rights?,” <em>Journal of International Women’s Studies</em> 25, no. 4 (2023): article 5, <a href="https://vc.bridgew.edu/jiws/vol25/iss4/5"><u>https://vc.bridgew.edu/jiws/vol25/iss4/5</u></a>.<a href="#rp-fnref46" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn47"><p>Rubab, Rahat, and Yunus, “Convergence of Private and Public Patriarchy,” 49–60.<a href="#rp-fnref47" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn48"><p><em>Islam-ud-Din</em>, 2016 SCMR 986; <em>Abrar Hussain</em>, PLD 2026 SC 42; <em>Noor Muhammad</em>, as reported by APP.<a href="#rp-fnref48" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn49"><p>“Oral Gift Must Be Strictly Proved,” Associated Press of Pakistan.<a href="#rp-fnref49" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn50"><p><em>Naila Shahbaz</em>, HCA No. 219 of 2024; <em>Kamal Khan v. Mst. Zainab</em>, as quoted in Mohmand, “Inheritance Rights of Orphaned Grandchildren.”<a href="#rp-fnref50" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn51"><p>Law Commission of Bangladesh, as summarised in <em>Daily Star</em>, June 9, 2012.<a href="#rp-fnref51" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="rp-fn52"><p>Iqbal and Mehtab, “State Must Ensure”; Hameed and Imran, “SC Rules,” proposing digital links between death registration, heir verification and mutation entries.<a href="#rp-fnref52" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</aside>
+
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="chapter" id="contact">
+  <div class="wrap">
+    <div class="ch-head">
+      <span class="ch-num" style="background:var(--teal)">6</span>
+      <div>
+        <h2><span class="en">Need further assistance?</span><span class="ur">مزید رہنمائی درکار ہے؟</span></h2>
+        <p><span class="en">For further assistance with the questions raised on this site, you can contact:</span><span class="ur">اس ویب سائٹ پر اٹھائے گئے سوالات میں مزید رہنمائی کے لیے رابطہ کریں:</span></p>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="contact-name">
+        <span class="mono">Contact</span>
+        <h3>Khan Muhammad Shahzad Khan</h3>
+      </div>
+      <div class="contact-num">
+        <span class="mono">Phone</span>
+        <p class="num" id="phone">+92 321 3533300</p>
+        <div class="chips">
+          <button class="chip" id="copy-phone">Copy number</button>
+          <a class="chip" href="tel:+923213533300">Call</a>
+        </div>
+      </div>
+    </div>
+    <p class="fine"><span class="en">This site gives general educational information, not individual legal advice.</span><span class="ur">یہ ویب سائٹ عمومی تعلیمی معلومات فراہم کرتی ہے، انفرادی قانونی مشورہ نہیں۔</span></p>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">WRITTEN OUT · Women’s inheritance rights in Pakistan · General educational information, not individual legal advice. Illustrations are original; the family shown is a worked example, not a real case.</div></footer>
+
+<script>
+(function(){
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const T=(en,ur)=>`<span class="en">${en}</span><span class="ur">${ur}</span>`;
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+
+function setLang(l){document.documentElement.dataset.lang=l;$$('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.lang===l));store.set('wo-lang',l)}
+$$('.lang button').forEach(b=>b.onclick=()=>setLang(b.dataset.lang));setLang(store.get('wo-lang')||'en');
+
+const reg=$('#register');
+function play(){reg.classList.remove('written');void reg.offsetWidth;setTimeout(()=>reg.classList.add('written'),700)}
+$('#replay').onclick=play;play();
+
+const C={teal:'var(--teal)',coral:'var(--coral)',gold:'var(--gold)',purple:'var(--purple)'};
+const TL=[
+ {y:'1872',n:'Punjab Laws Act',c:C.teal,t:'Punjab Laws Act, s.5',m:'Legislation · British Punjab',en:'Custom becomes the first rule of decision in succession and the special property of females.',ur:'وراثت اور خواتین کی خصوصی جائیداد میں رواج فیصلے کا پہلا اصول بن جاتا ہے۔',l:['Text puts custom first','Riwaj-i-am records custom district by district','Little record of women’s own claims']},
+ {y:'1937',n:'Shariat Application Act',c:C.coral,t:'Muslim Personal Law (Shariat) Application Act, s.2',m:'Legislation · British India',en:'Shariat governs Muslim succession, “save questions relating to agricultural land”.',ur:'مسلمانوں کی وراثت پر شریعت لاگو، سوائے زرعی زمین کے۔',l:['Farmland excluded by the text','Custom still rules the land','Movable wealth reaches women first']},
+ {y:'1948',n:'West Punjab Act',c:C.gold,t:'Punjab Muslim Personal Law (Shariat) Application Act',m:'Legislation · West Punjab, in force March 1948',en:'Muslim personal law becomes the rule in succession, now including agricultural land.',ur:'مسلم شخصی قانون، اب زرعی زمین سمیت، وراثت کا اصول بن جاتا ہے۔',l:['Land brought under Shariat','Women’s customary life estates survive','Records slow to change']},
+ {y:'1962',n:'West Pakistan Act',c:C.teal,t:'West Pakistan Muslim Personal Law (Shariat) Application Act (V of 1962)',m:'Legislation · ss. 2, 3, 5',en:'Shariat applies “notwithstanding any custom or usage”. Women’s limited estates under custom end.',ur:'شریعت «کسی بھی رواج کے باوجود» لاگو۔ رواج کے تحت خواتین کی محدود ملکیت ختم۔',l:['Custom displaced in the text','Life estates terminated','Earlier male acquisitions not reopened']},
+ {y:'1973',n:'Constitution',c:C.purple,t:'Constitution of Pakistan, Articles 23–25',m:'Constitution',en:'Every citizen may acquire, hold and dispose of property (Art. 23). All citizens are equal before the law (Art. 25).',ur:'ہر شہری جائیداد حاصل کرنے، رکھنے اور منتقل کرنے کا حق رکھتا ہے (آرٹیکل ۲۳)۔ تمام شہری قانون کی نظر میں برابر ہیں (آرٹیکل ۲۵)۔',l:['Property right for all','Equality guaranteed','Enforcement left to courts']},
+ {y:'1990',n:'PLD 1990 SC 1',c:C.coral,t:'Ghulam Ali v. Mst. Ghulam Sarwar Naqvi',m:'Supreme Court of Pakistan · PLD 1990 SC 1',en:'A woman’s “relinquishment” of her inheritance is against public policy in Islamic law. The estate passes to the heirs at death; no brother can stand in between.',ur:'عورت کی اپنے وراثتی حصے سے «دستبرداری» اسلامی قانون میں مفادِ عامہ کے خلاف ہے۔ وفات پر ترکہ خود وارثوں کو منتقل ہوتا ہے؛ کوئی بھائی درمیان میں نہیں آ سکتا۔',l:['Waivers scrutinised','Shares vest at death','Women still have to sue']},
+ {y:'2011',n:'s.498-A PPC',c:C.teal,t:'Prevention of Anti-Women Practices Act — s.498-A PPC',m:'Legislation · Pakistan Penal Code',en:'Depriving a woman of inheritance by deceitful or illegal means is a crime: 5 to 10 years’ imprisonment, a fine of Rs1 million, or both.',ur:'دھوکے یا غیر قانونی طریقے سے عورت کو وراثت سے محروم کرنا جرم ہے: ۵ سے ۱۰ سال قید، دس لاکھ روپے جرمانہ، یا دونوں۔',l:['Deprivation criminalised','Pressure now punishable','Prosecution needs a complaint']},
+ {y:'2021',n:'Punjab rights Act',c:C.teal,t:'Punjab Enforcement of Women’s Property Rights Act 2021',m:'Legislation · Punjab, enacted May 2021',en:'A faster complaint route to the Ombudsperson against coercion, fraud and forgery over women’s property, with police help to enforce orders.',ur:'خواتین کی جائیداد پر جبر، دھوکے اور جعل سازی کے خلاف محتسب کے پاس تیز شکایت کا راستہ، پولیس کی مدد کے ساتھ۔',l:['Ombudsperson route','Fraud and coercion targeted','Awareness still low']},
+ {y:'2025',n:'FSC & Supreme Court',c:C.coral,t:'FSC, chaddar/parchi (March) · SC, Abrar Hussain v. Bibi Shahida (Nov.)',m:'Federal Shariat Court · Supreme Court',en:'The FSC declares customs that deny women inheritance un-Islamic and illegal. The Supreme Court says the state must build a proactive mechanism so women get their shares without delay.',ur:'وفاقی شرعی عدالت خواتین کو وراثت سے محروم کرنے والے رواج کو غیر اسلامی اور غیر قانونی قرار دیتی ہے۔ سپریم کورٹ کہتی ہے کہ ریاست ایسا نظام بنائے کہ خواتین کو بلا تاخیر حصہ ملے۔',l:['Custom declared void','State duty stated','Mechanism not yet built']},
+ {y:'Today',n:'Law in practice',c:C.purple,t:'Law in practice',m:'October 2026',en:'In July 2026 the Supreme Court held that no custom or jirga can override Islamic law or the Constitution on women’s inheritance (as reported). The gap now is between the share on paper and the share received.',ur:'جولائی ۲۰۲۶ میں سپریم کورٹ نے قرار دیا کہ خواتین کی وراثت میں کوئی رواج یا جرگہ اسلامی قانون یا آئین پر فوقیت نہیں رکھتا (رپورٹ کے مطابق)۔ اب فاصلہ کاغذ کے حصے اور ملنے والے حصے کے درمیان ہے۔',l:['The law is clear','Custom persists in places','Claiming is the hard part']}
+];
+$('#tl').innerHTML=TL.map((e,i)=>`<button data-i="${i}" aria-pressed="false" style="color:${e.c}"><span class="dot" style="background:${e.c}"></span><span class="card"><b>${e.y}</b><span>${e.n}</span></span></button>`).join('');
+function tl(i){const e=TL[i];$$('#tl button').forEach((b,j)=>b.setAttribute('aria-pressed',i===j));
+ $('#tl-detail').innerHTML=`<div class="body"><span class="mono meta">${e.m}</span><h3>${e.y} · ${e.t}</h3>${T(e.en,e.ur)}</div><div class="lcx"><div><span class="mono" style="color:var(--teal)">Law</span>${e.l[0]}</div><div><span class="mono" style="color:var(--coral)">Custom</span>${e.l[1]}</div><div><span class="mono" style="color:var(--purple)">Experience</span>${e.l[2]}</div></div>`}
+$$('#tl button').forEach(b=>b.onclick=()=>tl(+b.dataset.i));tl(0);
+
+$$('#q2 .chip').forEach(b=>b.onclick=()=>{$$('#q2 .chip').forEach(c=>{c.classList.remove('right','wrong');if(c.dataset.a==='1')c.classList.add('right')});if(b.dataset.a!=='1')b.classList.add('wrong');$('#q2-out').hidden=false});
+
+const COL={son:'var(--teal)',dau:'var(--coral)',wid:'var(--purple)',none:'var(--paper-2)'};
+const RB={
+ custom:{p:{son:24},rows:[['son',T('Son','بیٹا'),T('all the ancestral land','تمام آبائی زمین')],['wid',T('Widow','بیوہ'),T('maintenance only (a life interest if there was no son)','صرف نان نفقہ (بیٹا نہ ہو تو تاحیات حق)')],['dau',T('Daughter','بیٹی'),T('no share of the land','زمین میں کوئی حصہ نہیں')]],
+  note:T('A typical pattern recorded in many Punjab customs for ancestral farmland. Customs varied, and could be contested in court.','پنجاب کے کئی رواجوں میں آبائی زرعی زمین کا عام طریقہ۔ رواج مختلف تھے اور عدالت میں چیلنج کیے جا سکتے تھے۔')},
+ shariat:{p:{wid:3,son:14,dau:7},rows:[['wid',T('Widow','بیوہ'),'1/8 · 12.5%'],['son',T('Son','بیٹا'),'14/24 · 58.3%'],['dau',T('Daughter','بیٹی'),'7/24 · 29.2%']],
+  note:T('The widow takes one-eighth because there are children (4:12); the son receives twice the daughter’s share (4:11). A worked example for this family only.','اولاد ہونے کی وجہ سے بیوہ کو آٹھواں حصہ (۴:۱۲)؛ بیٹے کو بیٹی سے دوگنا (۴:۱۱)۔ یہ صرف اس خاندان کی مثال ہے۔')}
+};
+$('#plots').innerHTML='<i></i>'.repeat(24);
+function rb(k){$('#rb-custom').setAttribute('aria-pressed',k==='custom');$('#rb-shariat').setAttribute('aria-pressed',k==='shariat');const d=RB[k],seq=[];
+ ['wid','son','dau'].forEach(h=>{for(let i=0;i<(d.p[h]||0);i++)seq.push(h)});$$('#plots i').forEach((p,i)=>p.style.background=COL[seq[i]||'none']);
+ $('#heirs').innerHTML=d.rows.map(r=>`<div class="heir"><span class="sw" style="background:${COL[r[0]]}"></span><span>${r[1]}<b>${r[2]}</b></span></div>`).join('');$('#rb-note').innerHTML=d.note}
+$('#rb-custom').onclick=()=>rb('custom');$('#rb-shariat').onclick=()=>rb('shariat');rb('custom');
+
+const ITEMS=[[T('A house in the city','شہر میں مکان'),'S'],[T('Gold jewellery','سونے کے زیورات'),'S'],[T('Money in the bank','بینک میں رقم'),'S'],[T('Agricultural land','زرعی زمین'),'C']];let done=0;
+$('#items').innerHTML=ITEMS.map((it,i)=>`<div class="item"><h4>${it[0]}</h4><div class="chips"><button class="chip" data-i="${i}" data-g="S">Shariat</button><button class="chip" data-i="${i}" data-g="C">Custom</button></div><div class="res" id="res-${i}"></div></div>`).join('');
+$$('#items .chip').forEach(b=>b.onclick=()=>{const i=+b.dataset.i,ok=ITEMS[i][1],pair=$$(`#items .chip[data-i="${i}"]`);if(pair[0].disabled)return;
+ pair.forEach(c=>{c.disabled=true;if(c.dataset.g===ok)c.classList.add('right')});if(b.dataset.g!==ok)b.classList.add('wrong');
+ $('#res-'+i).innerHTML=ok==='S'?T('Shariat under the 1937 Act.','۱۹۳۷ کے قانون کے تحت شریعت۔'):T('Excluded. Custom still decided.','مستثنیٰ۔ فیصلہ اب بھی رواج سے۔');if(++done===ITEMS.length)$('#clause').hidden=false});
+
+const ERAS=[
+ {f:1872,t:1947,c:'var(--gold)',g:'CUSTOM FIRST',en:'<b>Custom decides.</b> Under s.5 of the 1872 Act, custom is the rule of decision for succession. From 1937 the Shariat Act covers other property but leaves out agricultural land.',ur:'<b>فیصلہ رواج کرتا ہے۔</b> ۱۸۷۲ کے قانون کی دفعہ ۵ کے تحت وراثت میں رواج اصول ہے۔ ۱۹۳۷ کا شریعت ایکٹ باقی جائیداد پر لاگو ہے مگر زرعی زمین کو خارج رکھتا ہے۔'},
+ {f:1948,t:1962,c:'var(--teal)',g:'SHARIAT, WITH A CATCH',en:'<b>Shariat reaches the land.</b> The 1948 Punjab Act makes Muslim personal law the rule in succession, including farmland. A woman already holding land under custom holds only a limited, life estate.',ur:'<b>شریعت زمین تک پہنچتی ہے۔</b> ۱۹۴۸ کا پنجاب کا قانون زرعی زمین سمیت وراثت میں مسلم شخصی قانون لاگو کرتا ہے۔ جو خاتون رواج کے تحت زمین رکھتی ہے، اس کا حق صرف تاحیات ہے۔'},
+ {f:1963,t:1982,c:'var(--teal)',g:'LIMITED ESTATES ENDED',en:'<b>“Notwithstanding any custom or usage.”</b> The 1962 Act ends Muslim women’s limited estates under custom (s.3). The land passes to the Shariat heirs of the last full owner, and the woman receives her own Shariat share (s.5).',ur:'<b>«کسی بھی رواج کے باوجود»۔</b> ۱۹۶۲ کا قانون رواج کے تحت خواتین کی محدود ملکیت ختم کرتا ہے (دفعہ ۳)۔ زمین آخری مکمل مالک کے شرعی وارثوں کو جاتی ہے اور خاتون کو اپنا شرعی حصہ ملتا ہے (دفعہ ۵)۔'},
+ {f:1983,t:2010,c:'var(--purple)',g:'THE PAST STAYS CLOSED',en:'<b>Section 2-A (1983).</b> A male heir who received farmland under custom before 1948 is treated as its absolute owner. The Federal Shariat Court upheld this to avoid reopening closed transactions.',ur:'<b>دفعہ ۲-الف (۱۹۸۳)۔</b> جس مرد وارث کو ۱۹۴۸ سے پہلے رواج کے تحت زمین ملی، وہ اس کا مکمل مالک مانا جاتا ہے۔ وفاقی شرعی عدالت نے بند معاملات نہ کھولنے کے لیے اسے برقرار رکھا۔'},
+ {f:2011,t:2026,c:'var(--coral)',g:'ENFORCING THE SHARE',en:'<b>From rule to remedy.</b> The share is settled. New laws target deprivation itself: s.498-A PPC (2011), the Punjab Act (2021), and 2025 rulings against chaddar and parchi customs.',ur:'<b>اصول سے داد رسی تک۔</b> حصہ طے شدہ ہے۔ نئے قوانین محرومی کو نشانہ بناتے ہیں: دفعہ ۴۹۸-الف (۲۰۱۱)، پنجاب کا قانون (۲۰۲۱)، اور چادر و پرچی کے خلاف ۲۰۲۵ کے فیصلے۔'}
+];
+function yr(){const y=+$('#year').value;$('#yr-out').textContent=y;const e=ERAS.find(e=>y>=e.f&&y<=e.t);$('#era').style.borderLeftColor=e.c;
+ $('#era').innerHTML=`<span class="tag" style="background:${e.c}">${e.g} · ${e.f}–${e.t}</span><div>${T(e.en,e.ur)}</div>`}
+$('#year').oninput=yr;yr();
+
+const MYTHS=[
+ {c:T('“Daughters do not inherit land.”','«بیٹیاں زمین کی وارث نہیں ہوتیں۔»'),q:T('Which law applied to this property and period? What do the statute and judgments say?','اس جائیداد اور دور پر کون سا قانون لاگو تھا؟ قانون اور فیصلے کیا کہتے ہیں؟'),
+  r:T('Since 1948 in Punjab, and under the 1962 Act across West Pakistan, Muslim personal law governs succession to agricultural land “notwithstanding any custom”. A daughter is a Qur’anic heir; her share is generally half a son’s.','پنجاب میں ۱۹۴۸ سے، اور ۱۹۶۲ کے قانون کے تحت پورے مغربی پاکستان میں، زرعی زمین کی وراثت پر «کسی بھی رواج کے باوجود» مسلم شخصی قانون لاگو ہے۔ بیٹی قرآنی وارث ہے؛ اس کا حصہ عموماً بیٹے کا نصف ہے۔'),s:'FALSE TODAY',k:'var(--coral)'},
+ {c:T('“Women have always been excluded.”','«عورتوں کو ہمیشہ سے خارج رکھا گیا ہے۔»'),q:T('Did practice vary by time, place and community? What do the records show?','کیا عمل وقت، جگہ اور برادری کے ساتھ بدلتا رہا؟ ریکارڈ کیا دکھاتا ہے؟'),
+  r:T('Exclusion was a feature of many recorded customs, especially for ancestral land, and colonial courts enforced custom under the 1872 Act. Islamic law gave women fixed shares throughout, and customs varied and could be challenged.','اخراج کئی درج شدہ رواجوں کا حصہ تھا، خاص طور پر آبائی زمین میں، اور نوآبادیاتی عدالتوں نے ۱۸۷۲ کے قانون کے تحت رواج نافذ کیا۔ اسلامی قانون نے ہمیشہ خواتین کو مقررہ حصے دیے، اور رواج مختلف تھے۔'),s:'MISLEADING',k:'var(--purple)'},
+ {c:T('“A married daughter should give up her share.”','«شادی شدہ بیٹی کو اپنا حصہ چھوڑ دینا چاہیے۔»'),q:T('Does marriage itself remove an inheritance? What counts as a valid transfer?','کیا شادی خود وراثت ختم کر دیتی ہے؟ جائز منتقلی کسے کہتے ہیں؟'),
+  r:T('Marriage does not end a daughter’s right. The Supreme Court held that relinquishing an inheritance share is against public policy in Islamic law (PLD 1990 SC 1), and in 2025 the FSC called customs that pressure women to give up shares un-Islamic.','شادی بیٹی کا حق ختم نہیں کرتی۔ سپریم کورٹ کے مطابق وراثتی حصے سے دستبرداری اسلامی قانون میں مفادِ عامہ کے خلاف ہے (PLD 1990 SC 1)، اور ۲۰۲۵ میں وفاقی شرعی عدالت نے حصہ چھڑوانے کے رواج کو غیر اسلامی کہا۔'),s:'FALSE',k:'var(--coral)'},
+ {c:T('“It’s a private family matter.”','«یہ خاندان کا نجی معاملہ ہے۔»'),q:T('Does the state have any role once a family has decided?','خاندان کے فیصلے کے بعد کیا ریاست کا کوئی کردار ہے؟'),
+  r:T('Depriving a woman of inheritance by deceitful or illegal means is a crime under s.498-A of the Penal Code (2011). In 2025 the Supreme Court said the state itself must make sure women receive their shares.','دھوکے یا غیر قانونی طریقے سے عورت کو وراثت سے محروم کرنا دفعہ ۴۹۸-الف (۲۰۱۱) کے تحت جرم ہے۔ ۲۰۲۵ میں سپریم کورٹ نے کہا کہ یہ یقینی بنانا ریاست کی ذمہ داری ہے کہ خواتین کو حصہ ملے۔'),s:'FALSE',k:'var(--coral)'}
+];
+$('#myths-list').innerHTML=MYTHS.map((m,i)=>`<div class="myth" data-open="false"><div class="claim"><span class="mono">Myth 0${i+1}</span><blockquote>${m.c}</blockquote></div><div class="q"><span class="mono">Question to check</span>${m.q}</div><div class="r"><span class="mono">What the record shows</span><div class="before"><button class="chip" data-m="${i}">Check the record</button></div><div class="after"><span class="pill" style="background:${m.k}">${m.s}</span><div>${m.r}</div></div></div></div>`).join('');
+$$('#myths-list .chip').forEach(b=>b.onclick=()=>{b.closest('.myth').dataset.open='true'});
+
+const SC=[
+ {p:T('Days after the funeral, a sister signs a statement before a revenue official giving her share to her brothers. Nobody explained what she was giving up.','جنازے کے چند دن بعد ایک بہن ریونیو افسر کے سامنے بیان پر دستخط کرتی ہے کہ اس کا حصہ بھائیوں کو دے دیا جائے۔ کسی نے نہیں بتایا کہ وہ کیا چھوڑ رہی ہے۔'),a:'R',
+  w:T('<b>Red flag.</b> The Supreme Court treats relinquishment of an inheritance as against public policy (PLD 1990 SC 1). A waiver given without knowledge or under family pressure is what courts examine.','<b>خطرے کی علامت۔</b> سپریم کورٹ وراثت سے دستبرداری کو مفادِ عامہ کے خلاف سمجھتی ہے (PLD 1990 SC 1)۔ بغیر علم یا خاندانی دباؤ میں دی گئی دستبرداری کو عدالتیں جانچتی ہیں۔')},
+ {p:T('A jirga decides that the daughters will receive a chaddar, or a small payment, in place of their shares.','جرگہ فیصلہ کرتا ہے کہ بیٹیوں کو ان کے حصوں کے بدلے ایک چادر یا تھوڑی رقم دی جائے گی۔'),a:'R',
+  w:T('<b>Red flag.</b> In March 2025 the Federal Shariat Court declared the chaddar/parchi custom un-Islamic and illegal; customs that deprive women of inheritance have no legal force.','<b>خطرے کی علامت۔</b> مارچ ۲۰۲۵ میں وفاقی شرعی عدالت نے چادر/پرچی کے رواج کو غیر اسلامی اور غیر قانونی قرار دیا۔')},
+ {p:T('Her share is first transferred into her own name. Months later, after independent legal advice and with no pressure, she decides to gift part of it to her brother.','اس کا حصہ پہلے اس کے اپنے نام منتقل ہوتا ہے۔ مہینوں بعد، آزاد قانونی مشورے کے بعد اور بغیر دباؤ کے، وہ کچھ حصہ بھائی کو ہبہ کرتی ہے۔'),a:'F',
+  w:T('<b>Can be a free choice.</b> An owner may give away her own property. What matters is that it was hers first, and the decision was informed and free.','<b>آزاد مرضی ہو سکتی ہے۔</b> مالک اپنی جائیداد دے سکتی ہے۔ اہم یہ ہے کہ وہ پہلے اس کی تھی اور فیصلہ باخبر اور آزادانہ تھا۔')}
+];
+$('#scens').innerHTML=SC.map((s,i)=>`<div class="scen"><span class="mono">Scenario ${String.fromCharCode(65+i)}</span><p>${s.p}</p><div class="chips"><button class="chip" data-s="${i}" data-g="F">Free choice</button><button class="chip" data-s="${i}" data-g="R">Red flag</button></div><div class="answer" id="sc-${i}" hidden>${s.w}</div></div>`).join('');
+$$('#scens .chip').forEach(b=>b.onclick=()=>{const i=+b.dataset.s;$$(`#scens .chip[data-s="${i}"]`).forEach(c=>{c.classList.remove('right','wrong');if(c.dataset.g===SC[i].a)c.classList.add('right')});if(b.dataset.g!==SC[i].a)b.classList.add('wrong');const o=$('#sc-'+i);o.hidden=false;o.classList.toggle('warn',SC[i].a==='R')});
+
+['s1','s2','s3'].forEach(id=>{const el=$('#'+id);el.checked=store.get('wo-'+id)==='1';el.onchange=()=>store.set('wo-'+id,el.checked?'1':'0')});
+$('#copy-exp').onclick=async function(){const txt='WRITTEN OUT — Women’s inheritance rights in Pakistan\n\nASK WHICH LAW APPLIES: The answer depends on the family, the property and the legal circumstances.\nASK FOR THE SOURCE: Ask for the relevant provision, judgment or official procedure, not only a claim about tradition.\nGET ADVICE BEFORE SIGNING: If pressured to transfer or give up property, seek qualified advice first.\nKEEP RECORDS SAFELY: Ask which family, identity, property and succession documents are needed, and keep copies.\n\nGeneral educational information, not individual legal advice.';
+ try{await navigator.clipboard.writeText(txt);this.textContent='Copied'}catch(e){const r=document.createRange();r.selectNodeContents($('#explainer'));const s=getSelection();s.removeAllRanges();s.addRange(r);this.textContent='Selected — press copy'}setTimeout(()=>this.textContent='Copy explainer text',2200)};
+
+const TY={leg:['ORIGINAL LEGISLATION','t-leg'],jud:['COURT JUDGMENT','t-jud'],arc:['ARCHIVAL RECORD','t-arc'],rep:['NEWS REPORT','t-rep'],res:['RESEARCH','t-res']};
+const SRC=[
+ {k:'leg',t:'Punjab Laws Act, 1872 (IV of 1872)',m:'Section 5 · British Punjab',p:'Custom was the first rule of decision in succession.',lim:'Says nothing about how many women claimed property.',u:'https://highcourtchd.gov.in/sub_pages/left_menu/Rules_orders/high_court_rules/vol1/chap1partMV1.pdf',ul:'Text in High Court Rules and Orders, Vol. I'},
+ {k:'leg',t:'Muslim Personal Law (Shariat) Application Act, 1937',m:'Section 2 · British India',p:'Shariat applied to Muslim succession, except agricultural land.',lim:'Provinces later amended it differently.',u:'https://www.legitquest.com/act/muslim-personal-law-shariat-application-act-1937/27EF',ul:'Bare Act text'},
+ {k:'leg',t:'West Pakistan Muslim Personal Law (Shariat) Application Act, 1962',m:'Sections 2, 3, 5 · Act V of 1962',p:'Shariat applies notwithstanding custom; women’s limited estates under custom end.',lim:'Not retrospective for closed transactions.',u:'https://balochistan.gov.pk/wp-content/uploads/2024/10/West-Pakistan-Muslim-Personal-law-Shariat-Act-1962.pdf',ul:'Government of Balochistan copy (PDF)'},
+ {k:'leg',t:'Prevention of Anti-Women Practices Act, 2011',m:'Inserts s.498-A, Pakistan Penal Code',p:'Depriving a woman of inheritance by deceitful or illegal means is a crime.',lim:'Shows nothing about how often it is used.',u:'https://mail.shrc.org.pk/downloads/laws/Pakistan/16-Prevention-of-Anti-Women-Practices-Act-2011.pdf',ul:'Text (PDF)'},
+ {k:'leg',t:'Punjab Enforcement of Women’s Property Rights Act, 2021',m:'Punjab · May 2021',p:'Complaint route to the Ombudsperson; police help to enforce orders.',lim:'Procedure may change; check before filing.',u:'https://pcsw.punjab.gov.pk/node/536',ul:'Punjab Commission on the Status of Women'},
+ {k:'jud',t:'Ghulam Ali v. Mst. Ghulam Sarwar Naqvi',m:'PLD 1990 SC 1 · Supreme Court',p:'Relinquishment of a woman’s inheritance is against public policy in Islamic law.',lim:'Applied case by case by later courts.',u:'https://lpr.adb.org/resource/ghulam-ali-v-ghulam-sarwar-naqvi-pld-1990-sc-1-pakistan',ul:'Case summary (ADB)'},
+ {k:'jud',t:'Mst. Sakina Bibi v. Government of Punjab',m:'Sh. Pet. 19-I of 1998 · Federal Shariat Court',p:'Explains 1872, 1937, 1948 and 1962; upholds s.2-A for closed transactions.',lim:'Does not itself redistribute any estate.',u:'https://www.federalshariatcourt.gov.pk/Judgments/S.P.NO.19I.1998.pdf',ul:'Judgment (PDF)'},
+ {k:'jud',t:'Syeda Fouzia Jalal Shah v. Federation of Pakistan',m:'Sh. Pet. 10-I of 2023 · FSC, March 2025',p:'Chaddar/parchi and similar customs denying inheritance are un-Islamic and illegal.',lim:'Arose from Bannu district.',u:'https://www.federalshariatcourt.gov.pk/Judgments/Shariat Petition 10-I of 2023 Syeda Fouzia Jalal Shah vs FOP - Chaddar Parchi.pdf',ul:'Judgment (PDF)'},
+ {k:'rep',t:'Supreme Court: Abrar Hussain v. Bibi Shahida',m:'Dawn, 16 November 2025',p:'The state must build a proactive mechanism so women receive shares without delay.',lim:'News report; read the judgment before quoting.',u:'https://www.dawn.com/news/amp/1955440',ul:'Dawn report'},
+ {k:'rep',t:'Supreme Court: no custom or jirga overrides women’s inheritance',m:'ARY News, July 2026',p:'Tribal practice denying women inheritance declared illegal.',lim:'News report only; no case number given.',u:'https://arynews.tv//pakistan-court-declares-tribal-practice-for-women-inheritance-illegal.amp',ul:'ARY report'},
+ {k:'arc',t:'Riwaj-i-am and Rattigan’s Digest of Customary Law',m:'Settlement records · Rattigan, 1st ed. 1880',p:'How custom was recorded and presented to courts.',lim:'Written by colonial officers, largely from statements of male landholders.',u:'',ul:''},
+ {k:'res',t:'Batool & Zia-ul-Haq, “Custom and Female Right of Inheritance”',m:'Islamic Studies 58:1 (2019), 51–81',p:'How courts in British India and Pakistan treated custom against women’s inheritance.',lim:'Academic interpretation; context only.',u:'https://journals.iiu.edu.pk/index.php/islamicstudies/article/view/606',ul:'Journal page'},
+ {k:'rep',t:'“Why Women in Pakistan Still Lose Their Inheritance”',m:'The Friday Times, 12 March 2026',p:'How waivers before revenue officials work in practice.',lim:'Commentary; no statistics.',u:'https://www.thefridaytimes.com/12-Mar-2026/women-pakistan-still-lose-inheritance',ul:'Article'}
+];
+const card=s=>`<article class="card"><span class="type ${TY[s.k][1]}">${TY[s.k][0]}</span><div class="in"><h4>${s.t}</h4><div class="meta">${s.m}</div><div class="row"><b>WHAT IT PROVES</b>${s.p}</div><div class="row"><b>LIMITS</b>${s.lim}</div>${s.u?`<a href="${encodeURI(s.u)}" target="_blank" rel="noopener">${s.ul} ↗</a>`:'<span class="meta">Archival; consult a library copy.</span>'}</div></article>`;
+let filt='all';const FL=[['all','All'],['leg','Legislation'],['jud','Judgments'],['arc','Archive'],['rep','Reports'],['res','Research']];
+$('#filters').innerHTML=FL.map(f=>`<button class="chip" data-f="${f[0]}">${f[1]}</button>`).join('');
+function draw(){$('#cards').innerHTML=SRC.filter(s=>filt==='all'||s.k===filt).map(card).join('');$$('#filters .chip').forEach(b=>b.setAttribute('aria-pressed',b.dataset.f===filt))}
+$$('#filters .chip').forEach(b=>b.onclick=()=>{filt=b.dataset.f;draw()});draw();
+
+
+/* research reader */
+const reader=$('#reader'),rbtn=$('#read-btn');
+$('#toc').innerHTML=$$('#paper h2[id],#paper h3[id]').filter(h=>!h.closest('.footnotes')).map(h=>`<li><a href="#${h.id}" class="${h.tagName==='H3'?'sub':''}">${h.textContent}</a></li>`).join('');
+function openReader(o){reader.hidden=!o;rbtn.setAttribute('aria-expanded',o);rbtn.innerHTML=o?T('Hide the paper','مقالہ بند کریں'):T('Read the research paper','تحقیقی مقالہ پڑھیں');if(o)reader.scrollIntoView({behavior:'smooth'})}
+rbtn.onclick=()=>openReader(reader.hidden);
+$('#close-reader').onclick=()=>{openReader(false);$('#research').scrollIntoView()};
+$$('#paper a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{if(reader.hidden)openReader(true)}));
+$$('#paper a[href^="http"]').forEach(a=>{a.target='_blank';a.rel='noopener'});
+/* contact */
+$('#copy-phone').onclick=async function(){try{await navigator.clipboard.writeText('+92 321 3533300');this.textContent='Copied'}catch(e){const r=document.createRange();r.selectNodeContents($('#phone'));const g=getSelection();g.removeAllRanges();g.addRange(r);this.textContent='Selected — press copy'}setTimeout(()=>this.textContent='Copy number',2200)};
+const secs=['home','history','myths','rights','evidence','research','contact'].map(id=>document.getElementById(id));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)$$('#links a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));
+})();
+</script>
+</body></html>
